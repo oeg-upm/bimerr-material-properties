@@ -1,0 +1,683 @@
+@prefix : <http://bimerr.iot.linkeddata.es/def/material-properties#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://bimerr.iot.linkeddata.es/def/material-properties#> .
+
+<http://bimerr.iot.linkeddata.es/def/material-properties#> rdf:type owl:Ontology ;
+                                                            <http://purl.org/dc/elements/1.1/creator> "María Poveda-Villalón (Ontology Engineering Group, Universidad Politécnica de Madrid)" ,
+                                                                                                      "Serge Chávez-Feria (Ontology Engineering Group, Universidad Politécnica de Madrid)" ;
+                                                            <http://purl.org/dc/elements/1.1/description> "The material properties ontology provides the vocabulary to describe physical properties related to components, materials and layer in a building context. The ontology follows the L2 level modelling strategy proposed by the W3C LBD community group for the creation of properties. The L2 level states the usage of an intermediate instance for each property which encodes both the numerical value and the unit of measure."@en ;
+                                                            <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ;
+                                                            <http://purl.org/dc/elements/1.1/title> "Material properties ontology"@en ;
+                                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "props" ;
+                                                            owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#ADPE
+:ADPE rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:range :MaterialProperty ;
+      rdfs:comment "Abiotic depletion potential for non fossil resources"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#ADPF
+:ADPF rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:range :MaterialProperty ;
+      rdfs:comment "Abiotic depletion potential for fossil resources"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#AP
+:AP rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+    rdf:type owl:FunctionalProperty ;
+    rdfs:range :MaterialProperty ;
+    rdfs:comment "Acidification potential of soil and water."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE
+:BSIHE rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+       rdf:type owl:FunctionalProperty ;
+       rdfs:range :MaterialProperty ;
+       rdfs:comment "Back side infrared hemispherical emissivity"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI
+:BSSRNI rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:range :MaterialProperty ;
+        rdfs:comment "Back side solar reflectance at normal incidence"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI
+:BSVRNI rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:range :MaterialProperty ;
+        rdfs:comment "Back side visible reflectance at normal incidence"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#CRU
+:CRU rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:range :MaterialProperty ;
+     rdfs:comment "Components for re-use."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#EEE
+:EEE rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:range :MaterialProperty ;
+     rdfs:comment "Exported electrical energy."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#EET
+:EET rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:range :MaterialProperty ;
+     rdfs:comment "Exported thermal energy."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#EP
+:EP rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+    rdf:type owl:FunctionalProperty ;
+    rdfs:range :MaterialProperty ;
+    rdfs:comment "Eutrophication potential."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE
+:FSIHE rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+       rdf:type owl:FunctionalProperty ;
+       rdfs:range :MaterialProperty ;
+       rdfs:comment "Front side infrared hemispherical emissivity"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI
+:FSSRNI rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:range :MaterialProperty ;
+        rdfs:comment "Front transmittance at normal incidence"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI
+:FSVRNI rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:range :MaterialProperty ;
+        rdfs:comment "Front side visible reflectance at normal incidence"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#FW
+:FW rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+    rdf:type owl:FunctionalProperty ;
+    rdfs:range :MaterialProperty ;
+    rdfs:comment "Use of net fresh water."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#GWP
+:GWP rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:range :MaterialProperty ;
+     rdfs:comment "Global warming potential."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#HWD
+:HWD rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:range :MaterialProperty ;
+     rdfs:comment "Hazardous waste disposed"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#ITNI
+:ITNI rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:range :MaterialProperty ;
+      rdfs:comment "Infrared transmittance at normal incidence"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#MER
+:MER rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:range :MaterialProperty ;
+     rdfs:comment "Materials for energy recovery."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#MFR
+:MFR rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:range :MaterialProperty ;
+     rdfs:comment "Materials for recycling."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#NHWD
+:NHWD rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:range :MaterialProperty ;
+      rdfs:comment "Non hazardous waste disposed."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#NRSF
+:NRSF rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:range :MaterialProperty ;
+      rdfs:comment "Use of non renewable secondary fuels."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#ODP
+:ODP rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:range :MaterialProperty ;
+     rdfs:comment "Depletion potential of the stratospheric layer."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#ODT
+:ODT rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:range :MaterialProperty ;
+     rdfs:comment "Optical data type."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#PENRE
+:PENRE rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+       rdf:type owl:FunctionalProperty ;
+       rdfs:range :MaterialProperty ;
+       rdfs:comment "Use of non renewable primary energy."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#PENRM
+:PENRM rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+       rdf:type owl:FunctionalProperty ;
+       rdfs:range :MaterialProperty ;
+       rdfs:comment "Use of non renewable primary energy resources used as raw materials."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#PENRT
+:PENRT rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+       rdf:type owl:FunctionalProperty ;
+       rdfs:range :MaterialProperty ;
+       rdfs:comment "Total use of non renewable primary energy resource."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#PERE
+:PERE rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:range :MaterialProperty ;
+      rdfs:comment "Use of renewable primary energy."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#PERM
+:PERM rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:range :MaterialProperty ;
+      rdfs:comment "Use of renewable primary energy resources used as raw materials."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#PERT
+:PERT rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:range :MaterialProperty ;
+      rdfs:comment "Total use of renewable primary energy."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#POCP
+:POCP rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:range :MaterialProperty ;
+      rdfs:comment "Formation potential to tropospheric ozone."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#RSF
+:RSF rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:range :MaterialProperty ;
+     rdfs:comment "Use of renewable secondary fuels."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#RWD
+:RWD rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+     rdf:type owl:FunctionalProperty ;
+     rdfs:range :MaterialProperty ;
+     rdfs:comment "Radioactive waste disposed."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#SM
+:SM rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+    rdf:type owl:FunctionalProperty ;
+    rdfs:range :MaterialProperty ;
+    rdfs:comment "Use of secondary material."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#STNI
+:STNI rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:range :MaterialProperty ;
+      rdfs:comment "Solar transmittance at normal incidence."@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#VTNI
+:VTNI rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:range :MaterialProperty ;
+      rdfs:comment "Visible transmittance at normal incidence"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN
+:WGSDSN rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:range :MaterialProperty ;
+        rdfs:comment "Window glass spectral data set name"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#conductivity
+:conductivity rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:range :MaterialProperty ;
+              rdfs:label "conductivity"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#conversionFactorTo1Kg
+:conversionFactorTo1Kg rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                       rdf:type owl:FunctionalProperty ;
+                       rdfs:range :MaterialProperty ;
+                       rdfs:label "conversion factor to 1 Kg"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#density
+:density rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+         rdf:type owl:FunctionalProperty ;
+         rdfs:range :MaterialProperty ;
+         rdfs:label "density"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#doorHeatTransmissionCoefficient
+:doorHeatTransmissionCoefficient rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                                 rdf:type owl:FunctionalProperty ;
+                                 rdfs:range :MaterialProperty ;
+                                 rdfs:label "door heat transmission coefficient"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#glassEnergyTransmissionFactor
+:glassEnergyTransmissionFactor rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                               rdf:type owl:FunctionalProperty ;
+                               rdfs:range :MaterialProperty ;
+                               rdfs:label "glass energy transmission factor"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#glassHeatTransmissionCoefficient
+:glassHeatTransmissionCoefficient rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                                  rdf:type owl:FunctionalProperty ;
+                                  rdfs:range :MaterialProperty ;
+                                  rdfs:label "glass heat transmission coefficient"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#hasPosition
+:hasPosition rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:range :LayerProperty ;
+             rdfs:label "has position"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#layerThickness
+:layerThickness rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:range :LayerProperty ;
+                rdfs:label "layer thickness"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#lengthWeight
+:lengthWeight rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:range :MaterialProperty ;
+              rdfs:label "length weight"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#lifetime
+:lifetime rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:range :MaterialProperty ;
+          rdfs:label "lifetime"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#linearThermalBridgeCoefficient
+:linearThermalBridgeCoefficient rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                                rdf:type owl:FunctionalProperty ;
+                                rdfs:range :MaterialProperty ;
+                                rdfs:label "linear thermal bridge coefficient"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#materialThickness
+:materialThickness rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:range :MaterialProperty ;
+                   rdfs:label "material thickness"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#module
+:module rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:range :MaterialProperty ;
+        rdfs:label "module"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#percentage
+:percentage rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:range :MaterialProperty ;
+            rdfs:label "percentage"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#referenceSize
+:referenceSize rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:range :MaterialProperty ;
+               rdfs:label "reference size"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#roughness
+:roughness rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:range :MaterialProperty ;
+           rdfs:label "roughness"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#solarAbsorptance
+:solarAbsorptance rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:range :MaterialProperty ;
+                  rdfs:label "solar absorptance"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#specificHeat
+:specificHeat rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:range :MaterialProperty ;
+              rdfs:label "specific heat"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#surfaceWeight
+:surfaceWeight rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:range :MaterialProperty ;
+               rdfs:label "surface weight"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#thermalAbsorptance
+:thermalAbsorptance rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:range :MaterialProperty ;
+                    rdfs:label "thermal absorptance"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#thermalResistance
+:thermalResistance rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:range :MaterialProperty ;
+                   rdfs:label "thermal resistance"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#unitOfReference
+:unitOfReference rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:range :MaterialProperty ;
+                 rdfs:label "unit of reference"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#usedFromYear
+:usedFromYear rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:range :MaterialProperty ;
+              rdfs:label "used from year"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#usedToYear
+:usedToYear rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:range :MaterialProperty ;
+            rdfs:label "used to year"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#vapourDiffusionResistance
+:vapourDiffusionResistance rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                           rdf:type owl:FunctionalProperty ;
+                           rdfs:range :MaterialProperty ;
+                           rdfs:label "vapour diffusion resistance"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#vapourDiffusionResistanceDry
+:vapourDiffusionResistanceDry rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                              rdf:type owl:FunctionalProperty ;
+                              rdfs:range :MaterialProperty ;
+                              rdfs:label "vapour diffussion resistance dry"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#vapourDiffusionResistanceWet
+:vapourDiffusionResistanceWet rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                              rdf:type owl:FunctionalProperty ;
+                              rdfs:range :MaterialProperty ;
+                              rdfs:label "vapour diffusion resistance wet"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#visibleAbsorptance
+:visibleAbsorptance rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:range :MaterialProperty ;
+                    rdfs:label "visible absorptance"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#windowFrameHeatTransmissionCoefficient
+:windowFrameHeatTransmissionCoefficient rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                                        rdf:type owl:FunctionalProperty ;
+                                        rdfs:range :MaterialProperty ;
+                                        rdfs:label "window frame heat transmission coefficient"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#windowFrameRungWidth
+:windowFrameRungWidth rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:range :MaterialProperty ;
+                      rdfs:label "window frame rung width"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#windowFrameWidth
+:windowFrameWidth rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:range :MaterialProperty ;
+                  rdfs:label "window frame width"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#windowThickness
+:windowThickness rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:range :MaterialProperty ;
+                 rdfs:label "window thickness"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#yield
+:yield rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
+       rdf:type owl:FunctionalProperty ;
+       rdfs:range :MaterialProperty ;
+       rdfs:label "yield"@en .
+
+
+###  http://qudt.org/schema/qudt/unit
+<http://qudt.org/schema/qudt/unit> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/seas/hasProperty
+<https://w3id.org/seas/hasProperty> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.org/maxValue
+<http://schema.org/maxValue> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/minValue
+<http://schema.org/minValue> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/value
+<http://schema.org/value> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://bimerr.iot.linkeddata.es/def/building#Component
+<http://bimerr.iot.linkeddata.es/def/building#Component> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://bimerr.iot.linkeddata.es/def/building#Element> .
+
+
+###  http://bimerr.iot.linkeddata.es/def/building#Element
+<http://bimerr.iot.linkeddata.es/def/building#Element> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://w3id.org/seas/FeatureOfInterest> .
+
+
+###  http://bimerr.iot.linkeddata.es/def/building#Layer
+<http://bimerr.iot.linkeddata.es/def/building#Layer> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://bimerr.iot.linkeddata.es/def/building#Element> .
+
+
+###  http://bimerr.iot.linkeddata.es/def/building#Material
+<http://bimerr.iot.linkeddata.es/def/building#Material> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://w3id.org/seas/FeatureOfInterest> .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#ComponentProperty
+:ComponentProperty rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.w3id.org/opm#Property> ;
+                   rdfs:comment "Properties related to building components."@en ;
+                   rdfs:label "Component Property"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty
+:LayerProperty rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3id.org/opm#Property> ;
+               rdfs:comment "Properties related to a layer element."@en ;
+               rdfs:label "Layer Property"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty
+:MaterialProperty rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3id.org/opm#Property> ;
+                  rdfs:comment "Properties related to layer materials."@en ;
+                  rdfs:label "Material Property"@en .
+
+
+###  http://qudt.org/schema/qudt/Unit
+<http://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
+
+
+###  http://www.w3id.org/opm#Property
+<http://www.w3id.org/opm#Property> rdf:type owl:Class .
+
+
+###  https://w3id.org/seas/FeatureOfInterest
+<https://w3id.org/seas/FeatureOfInterest> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
