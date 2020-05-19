@@ -47,252 +47,252 @@
 <http://bimerr.iot.linkeddata.es/def/material-properties#ADPE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ADPE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ADPE> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ADPE> <http://www.w3.org/2000/01/rdf-schema#comment> "Abiotic depletion potential for non fossil resources"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ADPE> <http://www.w3.org/2000/01/rdf-schema#label> "abiotic depletion potential for non fossil resources (ADPE)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#ADPF
 <http://bimerr.iot.linkeddata.es/def/material-properties#ADPF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ADPF> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ADPF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ADPF> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ADPF> <http://www.w3.org/2000/01/rdf-schema#comment> "Abiotic depletion potential for fossil resources"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ADPF> <http://www.w3.org/2000/01/rdf-schema#label> "abiotic depletion potential for fossil resources (ADPF)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#AP
 <http://bimerr.iot.linkeddata.es/def/material-properties#AP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#AP> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#AP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#AP> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#AP> <http://www.w3.org/2000/01/rdf-schema#comment> "Acidification potential of soil and water."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AP> <http://www.w3.org/2000/01/rdf-schema#label> "acidification potential of soil and water (AP)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE> <http://www.w3.org/2000/01/rdf-schema#comment> "Back side infrared hemispherical emissivity"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE> <http://www.w3.org/2000/01/rdf-schema#label> "back side infrared hemispherical emissivity (BSIHE)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI> <http://www.w3.org/2000/01/rdf-schema#comment> "Back side solar reflectance at normal incidence"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI> <http://www.w3.org/2000/01/rdf-schema#label> "back side solar reflectance at normal incidence (BSSRNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI> <http://www.w3.org/2000/01/rdf-schema#comment> "Back side visible reflectance at normal incidence"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI> <http://www.w3.org/2000/01/rdf-schema#label> "back side visible reflectance at normal incidence (BSVRNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#CRU
 <http://bimerr.iot.linkeddata.es/def/material-properties#CRU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#CRU> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#CRU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#CRU> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#CRU> <http://www.w3.org/2000/01/rdf-schema#comment> "Components for re-use."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CRU> <http://www.w3.org/2000/01/rdf-schema#label> "components for re-usec (CRU)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#EEE
 <http://bimerr.iot.linkeddata.es/def/material-properties#EEE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#EEE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#EEE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#EEE> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#EEE> <http://www.w3.org/2000/01/rdf-schema#comment> "Exported electrical energy."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#EEE> <http://www.w3.org/2000/01/rdf-schema#label> "exported electrical energy (EEE)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#EET
 <http://bimerr.iot.linkeddata.es/def/material-properties#EET> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#EET> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#EET> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#EET> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#EET> <http://www.w3.org/2000/01/rdf-schema#comment> "Exported thermal energy."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#EET> <http://www.w3.org/2000/01/rdf-schema#label> "exported thermal energy (EET)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#EP
 <http://bimerr.iot.linkeddata.es/def/material-properties#EP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#EP> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#EP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#EP> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#EP> <http://www.w3.org/2000/01/rdf-schema#comment> "Eutrophication potential."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#EP> <http://www.w3.org/2000/01/rdf-schema#label> "eutrophication potential (EP)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE> <http://www.w3.org/2000/01/rdf-schema#comment> "Front side infrared hemispherical emissivity"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE> <http://www.w3.org/2000/01/rdf-schema#label> "front side infrared hemispherical emissivity (FSIHE)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI> <http://www.w3.org/2000/01/rdf-schema#comment> "Front transmittance at normal incidence"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI> <http://www.w3.org/2000/01/rdf-schema#label> "front transmittance at normal incidence (FSSRNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI> <http://www.w3.org/2000/01/rdf-schema#comment> "Front side visible reflectance at normal incidence"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI> <http://www.w3.org/2000/01/rdf-schema#label> "front side visible reflectance at normal incidence (FSVRNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#FW
 <http://bimerr.iot.linkeddata.es/def/material-properties#FW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FW> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FW> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#FW> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of net fresh water."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FW> <http://www.w3.org/2000/01/rdf-schema#label> "use of net fresh water (FW)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#GWP
 <http://bimerr.iot.linkeddata.es/def/material-properties#GWP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#GWP> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#GWP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#GWP> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#GWP> <http://www.w3.org/2000/01/rdf-schema#comment> "Global warming potential."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#GWP> <http://www.w3.org/2000/01/rdf-schema#label> "global warming potential (GWP)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#HWD
 <http://bimerr.iot.linkeddata.es/def/material-properties#HWD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#HWD> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#HWD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#HWD> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#HWD> <http://www.w3.org/2000/01/rdf-schema#comment> "Hazardous waste disposed"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HWD> <http://www.w3.org/2000/01/rdf-schema#label> "hazardous waste disposed (HWD)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#ITNI
 <http://bimerr.iot.linkeddata.es/def/material-properties#ITNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ITNI> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ITNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ITNI> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ITNI> <http://www.w3.org/2000/01/rdf-schema#comment> "Infrared transmittance at normal incidence"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ITNI> <http://www.w3.org/2000/01/rdf-schema#label> "infrared transmittance at normal incidence (ITNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#MER
 <http://bimerr.iot.linkeddata.es/def/material-properties#MER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MER> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MER> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MER> <http://www.w3.org/2000/01/rdf-schema#comment> "Materials for energy recovery."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MER> <http://www.w3.org/2000/01/rdf-schema#label> "materials for energy recovery (MER)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#MFR
 <http://bimerr.iot.linkeddata.es/def/material-properties#MFR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MFR> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MFR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MFR> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MFR> <http://www.w3.org/2000/01/rdf-schema#comment> "Materials for recycling."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MFR> <http://www.w3.org/2000/01/rdf-schema#label> "materials for recycling (MFR)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#NHWD
 <http://bimerr.iot.linkeddata.es/def/material-properties#NHWD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#NHWD> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#NHWD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#NHWD> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#NHWD> <http://www.w3.org/2000/01/rdf-schema#comment> "Non hazardous waste disposed."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#NHWD> <http://www.w3.org/2000/01/rdf-schema#label> "non hazardous waste disposed (NHWD)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#NRSF
 <http://bimerr.iot.linkeddata.es/def/material-properties#NRSF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#NRSF> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#NRSF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#NRSF> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#NRSF> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of non renewable secondary fuels."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#NRSF> <http://www.w3.org/2000/01/rdf-schema#label> "use of non renewable secondary fuels (NRSF)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#ODP
 <http://bimerr.iot.linkeddata.es/def/material-properties#ODP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ODP> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ODP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ODP> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ODP> <http://www.w3.org/2000/01/rdf-schema#comment> "Depletion potential of the stratospheric layer."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ODP> <http://www.w3.org/2000/01/rdf-schema#label> "depletion potential of the stratospheric layer (ODP)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#ODT
 <http://bimerr.iot.linkeddata.es/def/material-properties#ODT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ODT> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ODT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ODT> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ODT> <http://www.w3.org/2000/01/rdf-schema#comment> "Optical data type."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ODT> <http://www.w3.org/2000/01/rdf-schema#label> "optical data type (ODT)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#PENRE
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRE> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#PENRE> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of non renewable primary energy."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PENRE> <http://www.w3.org/2000/01/rdf-schema#label> "use of non renewable primary energy (PENRE)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#PENRM
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRM> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRM> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#PENRM> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of non renewable primary energy resources used as raw materials."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PENRM> <http://www.w3.org/2000/01/rdf-schema#label> "use of non renewable primary energy resources used as raw materials (PENRM)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#PENRT
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRT> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PENRT> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#PENRT> <http://www.w3.org/2000/01/rdf-schema#comment> "Total use of non renewable primary energy resource."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PENRT> <http://www.w3.org/2000/01/rdf-schema#label> "total use of non renewable primary energy resource (PENRT)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#PERE
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERE> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERE> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#PERE> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of renewable primary energy."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PERE> <http://www.w3.org/2000/01/rdf-schema#label> "use of renewable primary energy (PERE)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#PERM
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERM> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERM> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#PERM> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of renewable primary energy resources used as raw materials."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PERM> <http://www.w3.org/2000/01/rdf-schema#label> "use of renewable primary energy resources used as raw materials (PERM)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#PERT
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERT> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PERT> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#PERT> <http://www.w3.org/2000/01/rdf-schema#comment> "Total use of renewable primary energy."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PERT> <http://www.w3.org/2000/01/rdf-schema#label> "total use of renewable primary energy (PERT)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#POCP
 <http://bimerr.iot.linkeddata.es/def/material-properties#POCP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#POCP> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#POCP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#POCP> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#POCP> <http://www.w3.org/2000/01/rdf-schema#comment> "Formation potential to tropospheric ozone."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#POCP> <http://www.w3.org/2000/01/rdf-schema#label> "formation potential to tropospheric ozone (POCP)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#RSF
 <http://bimerr.iot.linkeddata.es/def/material-properties#RSF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#RSF> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#RSF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#RSF> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#RSF> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of renewable secondary fuels."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#RSF> <http://www.w3.org/2000/01/rdf-schema#label> "use of renewable secondary fuels (RSF)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#RWD
 <http://bimerr.iot.linkeddata.es/def/material-properties#RWD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#RWD> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#RWD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#RWD> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#RWD> <http://www.w3.org/2000/01/rdf-schema#comment> "Radioactive waste disposed."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#RWD> <http://www.w3.org/2000/01/rdf-schema#label> "radioactive waste disposed (RWD)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#SM
 <http://bimerr.iot.linkeddata.es/def/material-properties#SM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#SM> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#SM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#SM> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#SM> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of secondary material."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SM> <http://www.w3.org/2000/01/rdf-schema#label> "solar transmittance at normal incidence (STNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#STNI
 <http://bimerr.iot.linkeddata.es/def/material-properties#STNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#STNI> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#STNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#STNI> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#STNI> <http://www.w3.org/2000/01/rdf-schema#comment> "Solar transmittance at normal incidence."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#STNI> <http://www.w3.org/2000/01/rdf-schema#label> "solar transmittance at normal incidence (STNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#VTNI
 <http://bimerr.iot.linkeddata.es/def/material-properties#VTNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#VTNI> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#VTNI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#VTNI> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#VTNI> <http://www.w3.org/2000/01/rdf-schema#comment> "Visible transmittance at normal incidence"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#VTNI> <http://www.w3.org/2000/01/rdf-schema#label> "visible transmittance at normal incidence (VTNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN
 <http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seas/hasProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN> <http://www.w3.org/2000/01/rdf-schema#comment> "Window glass spectral data set name"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN> <http://www.w3.org/2000/01/rdf-schema#label> "window glass spectral data set name (WGSDSN)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#conductivity
 <http://bimerr.iot.linkeddata.es/def/material-properties#conductivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

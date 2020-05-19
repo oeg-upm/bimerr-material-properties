@@ -52,7 +52,7 @@
       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range :MaterialProperty ;
-      rdfs:comment "Abiotic depletion potential for non fossil resources"@en .
+      rdfs:label "abiotic depletion potential for non fossil resources (ADPE)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#ADPF
@@ -60,7 +60,7 @@
       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range :MaterialProperty ;
-      rdfs:comment "Abiotic depletion potential for fossil resources"@en .
+      rdfs:label "abiotic depletion potential for fossil resources (ADPF)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#AP
@@ -68,7 +68,7 @@
     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
     rdf:type owl:FunctionalProperty ;
     rdfs:range :MaterialProperty ;
-    rdfs:comment "Acidification potential of soil and water."@en .
+    rdfs:label "acidification potential of soil and water (AP)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE
@@ -76,7 +76,7 @@
        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
        rdf:type owl:FunctionalProperty ;
        rdfs:range :MaterialProperty ;
-       rdfs:comment "Back side infrared hemispherical emissivity"@en .
+       rdfs:label "back side infrared hemispherical emissivity (BSIHE)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI
@@ -84,7 +84,7 @@
         rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
         rdf:type owl:FunctionalProperty ;
         rdfs:range :MaterialProperty ;
-        rdfs:comment "Back side solar reflectance at normal incidence"@en .
+        rdfs:label "back side solar reflectance at normal incidence (BSSRNI)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI
@@ -92,7 +92,7 @@
         rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
         rdf:type owl:FunctionalProperty ;
         rdfs:range :MaterialProperty ;
-        rdfs:comment "Back side visible reflectance at normal incidence"@en .
+        rdfs:label "back side visible reflectance at normal incidence (BSVRNI)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#CRU
@@ -100,7 +100,7 @@
      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
      rdf:type owl:FunctionalProperty ;
      rdfs:range :MaterialProperty ;
-     rdfs:comment "Components for re-use."@en .
+     rdfs:label "components for re-usec (CRU)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#EEE
@@ -108,7 +108,7 @@
      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
      rdf:type owl:FunctionalProperty ;
      rdfs:range :MaterialProperty ;
-     rdfs:comment "Exported electrical energy."@en .
+     rdfs:label "exported electrical energy (EEE)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#EET
@@ -116,7 +116,7 @@
      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
      rdf:type owl:FunctionalProperty ;
      rdfs:range :MaterialProperty ;
-     rdfs:comment "Exported thermal energy."@en .
+     rdfs:label "exported thermal energy (EET)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#EP
@@ -124,7 +124,7 @@
     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
     rdf:type owl:FunctionalProperty ;
     rdfs:range :MaterialProperty ;
-    rdfs:comment "Eutrophication potential."@en .
+    rdfs:label "eutrophication potential (EP)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE
@@ -132,7 +132,7 @@
        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
        rdf:type owl:FunctionalProperty ;
        rdfs:range :MaterialProperty ;
-       rdfs:comment "Front side infrared hemispherical emissivity"@en .
+       rdfs:label "front side infrared hemispherical emissivity (FSIHE)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI
@@ -140,7 +140,7 @@
         rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
         rdf:type owl:FunctionalProperty ;
         rdfs:range :MaterialProperty ;
-        rdfs:comment "Front transmittance at normal incidence"@en .
+        rdfs:label "front transmittance at normal incidence (FSSRNI)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI
@@ -148,7 +148,7 @@
         rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
         rdf:type owl:FunctionalProperty ;
         rdfs:range :MaterialProperty ;
-        rdfs:comment "Front side visible reflectance at normal incidence"@en .
+        rdfs:label "front side visible reflectance at normal incidence (FSVRNI)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#FW
@@ -156,7 +156,7 @@
     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
     rdf:type owl:FunctionalProperty ;
     rdfs:range :MaterialProperty ;
-    rdfs:comment "Use of net fresh water."@en .
+    rdfs:label "use of net fresh water (FW)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#GWP
@@ -164,7 +164,7 @@
      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
      rdf:type owl:FunctionalProperty ;
      rdfs:range :MaterialProperty ;
-     rdfs:comment "Global warming potential."@en .
+     rdfs:label "global warming potential (GWP)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#HWD
@@ -172,7 +172,7 @@
      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
      rdf:type owl:FunctionalProperty ;
      rdfs:range :MaterialProperty ;
-     rdfs:comment "Hazardous waste disposed"@en .
+     rdfs:label "hazardous waste disposed (HWD)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#ITNI
@@ -180,7 +180,7 @@
       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range :MaterialProperty ;
-      rdfs:comment "Infrared transmittance at normal incidence"@en .
+      rdfs:label "infrared transmittance at normal incidence (ITNI)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#MER
@@ -188,7 +188,7 @@
      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
      rdf:type owl:FunctionalProperty ;
      rdfs:range :MaterialProperty ;
-     rdfs:comment "Materials for energy recovery."@en .
+     rdfs:label "materials for energy recovery (MER)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#MFR
@@ -196,7 +196,7 @@
      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
      rdf:type owl:FunctionalProperty ;
      rdfs:range :MaterialProperty ;
-     rdfs:comment "Materials for recycling."@en .
+     rdfs:label "materials for recycling (MFR)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#NHWD
@@ -204,7 +204,7 @@
       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range :MaterialProperty ;
-      rdfs:comment "Non hazardous waste disposed."@en .
+      rdfs:label "non hazardous waste disposed (NHWD)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#NRSF
@@ -212,7 +212,7 @@
       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range :MaterialProperty ;
-      rdfs:comment "Use of non renewable secondary fuels."@en .
+      rdfs:label "use of non renewable secondary fuels (NRSF)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#ODP
@@ -220,7 +220,7 @@
      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
      rdf:type owl:FunctionalProperty ;
      rdfs:range :MaterialProperty ;
-     rdfs:comment "Depletion potential of the stratospheric layer."@en .
+     rdfs:label "depletion potential of the stratospheric layer (ODP)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#ODT
@@ -228,7 +228,7 @@
      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
      rdf:type owl:FunctionalProperty ;
      rdfs:range :MaterialProperty ;
-     rdfs:comment "Optical data type."@en .
+     rdfs:label "optical data type (ODT)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#PENRE
@@ -236,7 +236,7 @@
        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
        rdf:type owl:FunctionalProperty ;
        rdfs:range :MaterialProperty ;
-       rdfs:comment "Use of non renewable primary energy."@en .
+       rdfs:label "use of non renewable primary energy (PENRE)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#PENRM
@@ -244,7 +244,7 @@
        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
        rdf:type owl:FunctionalProperty ;
        rdfs:range :MaterialProperty ;
-       rdfs:comment "Use of non renewable primary energy resources used as raw materials."@en .
+       rdfs:label "use of non renewable primary energy resources used as raw materials (PENRM)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#PENRT
@@ -252,7 +252,7 @@
        rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
        rdf:type owl:FunctionalProperty ;
        rdfs:range :MaterialProperty ;
-       rdfs:comment "Total use of non renewable primary energy resource."@en .
+       rdfs:label "total use of non renewable primary energy resource (PENRT)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#PERE
@@ -260,7 +260,7 @@
       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range :MaterialProperty ;
-      rdfs:comment "Use of renewable primary energy."@en .
+      rdfs:label "use of renewable primary energy (PERE)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#PERM
@@ -268,7 +268,7 @@
       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range :MaterialProperty ;
-      rdfs:comment "Use of renewable primary energy resources used as raw materials."@en .
+      rdfs:label "use of renewable primary energy resources used as raw materials (PERM)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#PERT
@@ -276,7 +276,7 @@
       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range :MaterialProperty ;
-      rdfs:comment "Total use of renewable primary energy."@en .
+      rdfs:label "total use of renewable primary energy (PERT)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#POCP
@@ -284,7 +284,7 @@
       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range :MaterialProperty ;
-      rdfs:comment "Formation potential to tropospheric ozone."@en .
+      rdfs:label "formation potential to tropospheric ozone (POCP)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#RSF
@@ -292,7 +292,7 @@
      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
      rdf:type owl:FunctionalProperty ;
      rdfs:range :MaterialProperty ;
-     rdfs:comment "Use of renewable secondary fuels."@en .
+     rdfs:label "use of renewable secondary fuels (RSF)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#RWD
@@ -300,7 +300,7 @@
      rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
      rdf:type owl:FunctionalProperty ;
      rdfs:range :MaterialProperty ;
-     rdfs:comment "Radioactive waste disposed."@en .
+     rdfs:label "radioactive waste disposed (RWD)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#SM
@@ -308,7 +308,7 @@
     rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
     rdf:type owl:FunctionalProperty ;
     rdfs:range :MaterialProperty ;
-    rdfs:comment "Use of secondary material."@en .
+    rdfs:label "solar transmittance at normal incidence (STNI)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#STNI
@@ -316,7 +316,7 @@
       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range :MaterialProperty ;
-      rdfs:comment "Solar transmittance at normal incidence."@en .
+      rdfs:label "solar transmittance at normal incidence (STNI)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#VTNI
@@ -324,7 +324,7 @@
       rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
       rdf:type owl:FunctionalProperty ;
       rdfs:range :MaterialProperty ;
-      rdfs:comment "Visible transmittance at normal incidence"@en .
+      rdfs:label "visible transmittance at normal incidence (VTNI)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN
@@ -332,7 +332,7 @@
         rdfs:subPropertyOf <https://w3id.org/seas/hasProperty> ;
         rdf:type owl:FunctionalProperty ;
         rdfs:range :MaterialProperty ;
-        rdfs:comment "Window glass spectral data set name"@en .
+        rdfs:label "window glass spectral data set name (WGSDSN)"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#conductivity

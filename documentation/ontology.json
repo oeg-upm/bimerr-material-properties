@@ -50,9 +50,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#ADPE",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Abiotic depletion potential for non fossil resources"
+    "@value" : "abiotic depletion potential for non fossil resources (ADPE)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -63,9 +63,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#ADPF",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Abiotic depletion potential for fossil resources"
+    "@value" : "abiotic depletion potential for fossil resources (ADPF)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -76,9 +76,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#AP",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Acidification potential of soil and water."
+    "@value" : "acidification potential of soil and water (AP)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -89,9 +89,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Back side infrared hemispherical emissivity"
+    "@value" : "back side infrared hemispherical emissivity (BSIHE)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -102,9 +102,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Back side solar reflectance at normal incidence"
+    "@value" : "back side solar reflectance at normal incidence (BSSRNI)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -115,9 +115,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Back side visible reflectance at normal incidence"
+    "@value" : "back side visible reflectance at normal incidence (BSVRNI)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -128,9 +128,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#CRU",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Components for re-use."
+    "@value" : "components for re-usec (CRU)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -155,9 +155,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#EEE",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Exported electrical energy."
+    "@value" : "exported electrical energy (EEE)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -168,9 +168,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#EET",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Exported thermal energy."
+    "@value" : "exported thermal energy (EET)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -181,9 +181,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#EP",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Eutrophication potential."
+    "@value" : "eutrophication potential (EP)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -194,9 +194,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Front side infrared hemispherical emissivity"
+    "@value" : "front side infrared hemispherical emissivity (FSIHE)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -207,9 +207,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Front transmittance at normal incidence"
+    "@value" : "front transmittance at normal incidence (FSSRNI)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -220,9 +220,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Front side visible reflectance at normal incidence"
+    "@value" : "front side visible reflectance at normal incidence (FSVRNI)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -233,9 +233,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#FW",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Use of net fresh water."
+    "@value" : "use of net fresh water (FW)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -246,9 +246,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#GWP",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Global warming potential."
+    "@value" : "global warming potential (GWP)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -259,9 +259,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#HWD",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Hazardous waste disposed"
+    "@value" : "hazardous waste disposed (HWD)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -272,9 +272,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#ITNI",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Infrared transmittance at normal incidence"
+    "@value" : "infrared transmittance at normal incidence (ITNI)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -299,9 +299,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MER",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Materials for energy recovery."
+    "@value" : "materials for energy recovery (MER)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -312,9 +312,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MFR",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Materials for recycling."
+    "@value" : "materials for recycling (MFR)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -339,9 +339,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#NHWD",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Non hazardous waste disposed."
+    "@value" : "non hazardous waste disposed (NHWD)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -352,9 +352,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#NRSF",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Use of non renewable secondary fuels."
+    "@value" : "use of non renewable secondary fuels (NRSF)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -365,9 +365,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#ODP",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Depletion potential of the stratospheric layer."
+    "@value" : "depletion potential of the stratospheric layer (ODP)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -378,9 +378,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#ODT",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Optical data type."
+    "@value" : "optical data type (ODT)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -391,9 +391,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#PENRE",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Use of non renewable primary energy."
+    "@value" : "use of non renewable primary energy (PENRE)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -404,9 +404,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#PENRM",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Use of non renewable primary energy resources used as raw materials."
+    "@value" : "use of non renewable primary energy resources used as raw materials (PENRM)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -417,9 +417,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#PENRT",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Total use of non renewable primary energy resource."
+    "@value" : "total use of non renewable primary energy resource (PENRT)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -430,9 +430,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#PERE",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Use of renewable primary energy."
+    "@value" : "use of renewable primary energy (PERE)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -443,9 +443,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#PERM",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Use of renewable primary energy resources used as raw materials."
+    "@value" : "use of renewable primary energy resources used as raw materials (PERM)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -456,9 +456,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#PERT",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Total use of renewable primary energy."
+    "@value" : "total use of renewable primary energy (PERT)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -469,9 +469,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#POCP",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Formation potential to tropospheric ozone."
+    "@value" : "formation potential to tropospheric ozone (POCP)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -482,9 +482,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#RSF",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Use of renewable secondary fuels."
+    "@value" : "use of renewable secondary fuels (RSF)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -495,9 +495,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#RWD",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Radioactive waste disposed."
+    "@value" : "radioactive waste disposed (RWD)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -508,9 +508,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#SM",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Use of secondary material."
+    "@value" : "solar transmittance at normal incidence (STNI)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -521,9 +521,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#STNI",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Solar transmittance at normal incidence."
+    "@value" : "solar transmittance at normal incidence (STNI)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -534,9 +534,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#VTNI",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Visible transmittance at normal incidence"
+    "@value" : "visible transmittance at normal incidence (VTNI)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
@@ -547,9 +547,9 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Window glass spectral data set name"
+    "@value" : "window glass spectral data set name (WGSDSN)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
