@@ -15,7 +15,7 @@
         <dc:publisher>http://www.oeg-upm.net/</dc:publisher>
         <dc:title xml:lang="en">Material properties ontology</dc:title>
         <vann:preferredNamespacePrefix>props</vann:preferredNamespacePrefix>
-        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <owl:versionInfo>0.0.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -90,7 +90,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#ADPE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">abiotic depletion potential for non fossil resources (ADPE)</rdfs:label>
@@ -102,7 +102,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#ADPF">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">abiotic depletion potential for fossil resources (ADPF)</rdfs:label>
@@ -114,7 +114,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#AP">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">acidification potential of soil and water (AP)</rdfs:label>
@@ -126,7 +126,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">back side infrared hemispherical emissivity (BSIHE)</rdfs:label>
@@ -138,7 +138,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">back side solar reflectance at normal incidence (BSSRNI)</rdfs:label>
@@ -150,7 +150,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">back side visible reflectance at normal incidence (BSVRNI)</rdfs:label>
@@ -162,7 +162,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#CRU">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">components for re-usec (CRU)</rdfs:label>
@@ -174,7 +174,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#EEE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">exported electrical energy (EEE)</rdfs:label>
@@ -186,7 +186,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#EET">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">exported thermal energy (EET)</rdfs:label>
@@ -198,7 +198,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#EP">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">eutrophication potential (EP)</rdfs:label>
@@ -210,7 +210,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">front side infrared hemispherical emissivity (FSIHE)</rdfs:label>
@@ -222,7 +222,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">front transmittance at normal incidence (FSSRNI)</rdfs:label>
@@ -234,7 +234,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">front side visible reflectance at normal incidence (FSVRNI)</rdfs:label>
@@ -246,7 +246,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#FW">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">use of net fresh water (FW)</rdfs:label>
@@ -258,7 +258,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#GWP">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">global warming potential (GWP)</rdfs:label>
@@ -270,7 +270,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#HWD">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">hazardous waste disposed (HWD)</rdfs:label>
@@ -282,7 +282,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#ITNI">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">infrared transmittance at normal incidence (ITNI)</rdfs:label>
@@ -294,7 +294,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#MER">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">materials for energy recovery (MER)</rdfs:label>
@@ -306,7 +306,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#MFR">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">materials for recycling (MFR)</rdfs:label>
@@ -318,7 +318,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#NHWD">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">non hazardous waste disposed (NHWD)</rdfs:label>
@@ -330,7 +330,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#NRSF">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">use of non renewable secondary fuels (NRSF)</rdfs:label>
@@ -342,7 +342,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#ODP">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">depletion potential of the stratospheric layer (ODP)</rdfs:label>
@@ -354,7 +354,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#ODT">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">optical data type (ODT)</rdfs:label>
@@ -366,7 +366,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#PENRE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">use of non renewable primary energy (PENRE)</rdfs:label>
@@ -378,7 +378,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#PENRM">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">use of non renewable primary energy resources used as raw materials (PENRM)</rdfs:label>
@@ -390,7 +390,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#PENRT">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">total use of non renewable primary energy resource (PENRT)</rdfs:label>
@@ -402,7 +402,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#PERE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">use of renewable primary energy (PERE)</rdfs:label>
@@ -414,7 +414,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#PERM">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">use of renewable primary energy resources used as raw materials (PERM)</rdfs:label>
@@ -426,7 +426,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#PERT">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">total use of renewable primary energy (PERT)</rdfs:label>
@@ -438,7 +438,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#POCP">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">formation potential to tropospheric ozone (POCP)</rdfs:label>
@@ -450,7 +450,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#RSF">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">use of renewable secondary fuels (RSF)</rdfs:label>
@@ -462,7 +462,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#RWD">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">radioactive waste disposed (RWD)</rdfs:label>
@@ -474,7 +474,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#SM">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">solar transmittance at normal incidence (STNI)</rdfs:label>
@@ -486,7 +486,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#STNI">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">solar transmittance at normal incidence (STNI)</rdfs:label>
@@ -498,7 +498,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#VTNI">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">visible transmittance at normal incidence (VTNI)</rdfs:label>
@@ -510,7 +510,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">window glass spectral data set name (WGSDSN)</rdfs:label>
@@ -522,7 +522,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#conductivity">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">conductivity</rdfs:label>
@@ -534,7 +534,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#conversionFactorTo1Kg">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">conversion factor to 1 Kg</rdfs:label>
@@ -546,7 +546,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#density">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">density</rdfs:label>
@@ -558,7 +558,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#doorHeatTransmissionCoefficient">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">door heat transmission coefficient</rdfs:label>
@@ -570,7 +570,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#glassEnergyTransmissionFactor">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">glass energy transmission factor</rdfs:label>
@@ -582,7 +582,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#glassHeatTransmissionCoefficient">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">glass heat transmission coefficient</rdfs:label>
@@ -594,7 +594,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#hasPosition">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty"/>
         <rdfs:label xml:lang="en">has position</rdfs:label>
@@ -606,7 +606,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#layerThickness">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty"/>
         <rdfs:label xml:lang="en">layer thickness</rdfs:label>
@@ -618,7 +618,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#lengthWeight">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">length weight</rdfs:label>
@@ -630,7 +630,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#lifetime">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">lifetime</rdfs:label>
@@ -642,7 +642,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#linearThermalBridgeCoefficient">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">linear thermal bridge coefficient</rdfs:label>
@@ -654,7 +654,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#materialThickness">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">material thickness</rdfs:label>
@@ -666,7 +666,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#module">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">module</rdfs:label>
@@ -678,7 +678,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#percentage">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">percentage</rdfs:label>
@@ -690,7 +690,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#referenceSize">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">reference size</rdfs:label>
@@ -702,7 +702,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#roughness">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">roughness</rdfs:label>
@@ -714,7 +714,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#solarAbsorptance">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">solar absorptance</rdfs:label>
@@ -726,7 +726,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#specificHeat">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">specific heat</rdfs:label>
@@ -738,7 +738,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#surfaceWeight">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">surface weight</rdfs:label>
@@ -750,7 +750,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#thermalAbsorptance">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">thermal absorptance</rdfs:label>
@@ -762,7 +762,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#thermalResistance">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">thermal resistance</rdfs:label>
@@ -774,7 +774,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#unitOfReference">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">unit of reference</rdfs:label>
@@ -786,7 +786,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#usedFromYear">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">used from year</rdfs:label>
@@ -798,7 +798,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#usedToYear">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">used to year</rdfs:label>
@@ -810,7 +810,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#vapourDiffusionResistance">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">vapour diffusion resistance</rdfs:label>
@@ -822,7 +822,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#vapourDiffusionResistanceDry">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">vapour diffussion resistance dry</rdfs:label>
@@ -834,7 +834,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#vapourDiffusionResistanceWet">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">vapour diffusion resistance wet</rdfs:label>
@@ -846,7 +846,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#visibleAbsorptance">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">visible absorptance</rdfs:label>
@@ -858,7 +858,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#windowFrameHeatTransmissionCoefficient">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">window frame heat transmission coefficient</rdfs:label>
@@ -870,7 +870,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#windowFrameRungWidth">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">window frame rung width</rdfs:label>
@@ -882,7 +882,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#windowFrameWidth">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">window frame width</rdfs:label>
@@ -894,7 +894,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#windowThickness">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">window thickness</rdfs:label>
@@ -906,7 +906,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#yield">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
         <rdfs:label xml:lang="en">yield</rdfs:label>
@@ -917,14 +917,19 @@
     <!-- http://qudt.org/schema/qudt/unit -->
 
 
-    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/unit"/>
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/unit">
+        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:label xml:lang="en">unit</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/seas/hasProperty -->
+    <!-- http://www.w3.org/ns/ssn/hasProperty -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/seas/hasProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/hasProperty">
+        <rdfs:label xml:lang="en">has property</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -943,21 +948,27 @@
     <!-- http://schema.org/maxValue -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/maxValue"/>
+    <owl:DatatypeProperty rdf:about="http://schema.org/maxValue">
+        <rdfs:label xml:lang="en">max value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://schema.org/minValue -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/minValue"/>
+    <owl:DatatypeProperty rdf:about="http://schema.org/minValue">
+        <rdfs:label xml:lang="en">min value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://schema.org/value -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/value"/>
+    <owl:DatatypeProperty rdf:about="http://schema.org/value">
+        <rdfs:label xml:lang="en">has value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -986,7 +997,7 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/building#Element">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
     </owl:Class>
     
 
@@ -1004,7 +1015,7 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/building#Material">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/seas/FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
     </owl:Class>
     
 
@@ -1013,7 +1024,7 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#ComponentProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/opm#Property"/>
+        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#Property"/>
         <rdfs:comment xml:lang="en">Properties related to building components.</rdfs:comment>
         <rdfs:label xml:lang="en">Component Property</rdfs:label>
     </owl:Class>
@@ -1024,7 +1035,7 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/opm#Property"/>
+        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#Property"/>
         <rdfs:comment xml:lang="en">Properties related to a layer element.</rdfs:comment>
         <rdfs:label xml:lang="en">Layer Property</rdfs:label>
     </owl:Class>
@@ -1035,9 +1046,45 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/opm#Property"/>
+        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#Property"/>
         <rdfs:comment xml:lang="en">Properties related to layer materials.</rdfs:comment>
         <rdfs:label xml:lang="en">Material Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://bimerr.iot.linkeddata.es/def/material-properties#Property -->
+
+
+    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#Property">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/opm#Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/value"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/maxValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/minValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Properties used in the building construction sector for the different elements involved.</rdfs:comment>
+        <rdfs:label xml:lang="en">Property</rdfs:label>
     </owl:Class>
     
 
@@ -1045,21 +1092,48 @@
     <!-- http://qudt.org/schema/qudt/Unit -->
 
 
-    <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit"/>
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit">
+        <rdfs:label xml:lang="en">Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Feature of interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Property -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/Property">
+        <rdfs:label xml:lang="en">ssn:Property</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.w3id.org/opm#Property -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/opm#Property"/>
-    
-
-
-    <!-- https://w3id.org/seas/FeatureOfInterest -->
-
-
-    <owl:Class rdf:about="https://w3id.org/seas/FeatureOfInterest"/>
+    <owl:Class rdf:about="http://www.w3id.org/opm#Property">
+        <rdfs:label xml:lang="en">opm:Property</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 

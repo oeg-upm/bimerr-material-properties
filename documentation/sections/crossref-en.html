@@ -20,6 +20,9 @@ This section provides details for each class and property defined by Material pr
          </a>
       </li>
       <li>
+         <a href="#http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">Feature of interest</a>
+      </li>
+      <li>
          <a href="#http://bimerr.iot.linkeddata.es/def/building#Layer"
             title="http://bimerr.iot.linkeddata.es/def/building#Layer">
             <span>layer</span>
@@ -38,6 +41,19 @@ This section provides details for each class and property defined by Material pr
       <li>
          <a href="#MaterialProperty"
             title="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty">Material Property</a>
+      </li>
+      <li>
+         <a href="#http://www.w3id.org/opm#Property" title="http://www.w3id.org/opm#Property">opm:Property</a>
+      </li>
+      <li>
+         <a href="#Property"
+            title="http://bimerr.iot.linkeddata.es/def/material-properties#Property">Property</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">ssn:Property</a>
+      </li>
+      <li>
+         <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a>
       </li>
    </ul>
    <div class="entity" id="http://bimerr.iot.linkeddata.es/def/building#Component">
@@ -69,7 +85,8 @@ This section provides details for each class and property defined by Material pr
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.w3id.org/opm#Property">property</span>
+            <a href="#Property"
+               title="http://bimerr.iot.linkeddata.es/def/material-properties#Property">Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -84,7 +101,7 @@ This section provides details for each class and property defined by Material pr
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/seas/FeatureOfInterest">feature of interest</span>
+            <a href="#http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">Feature of interest</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -93,6 +110,26 @@ This section provides details for each class and property defined by Material pr
                title="http://bimerr.iot.linkeddata.es/def/building#Component">component</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://bimerr.iot.linkeddata.es/def/building#Layer"
                title="http://bimerr.iot.linkeddata.es/def/building#Layer">layer</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/sosa/FeatureOfInterest">
+      <h3>Feature of interest<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/FeatureOfInterest</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://bimerr.iot.linkeddata.es/def/building#Element"
+               title="http://bimerr.iot.linkeddata.es/def/building#Element">element</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://bimerr.iot.linkeddata.es/def/building#Material"
+               title="http://bimerr.iot.linkeddata.es/def/building#Material">material</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -126,7 +163,8 @@ This section provides details for each class and property defined by Material pr
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.w3id.org/opm#Property">property</span>
+            <a href="#Property"
+               title="http://bimerr.iot.linkeddata.es/def/material-properties#Property">Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -149,7 +187,7 @@ This section provides details for each class and property defined by Material pr
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/seas/FeatureOfInterest">feature of interest</span>
+            <a href="#http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">Feature of interest</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -167,7 +205,8 @@ This section provides details for each class and property defined by Material pr
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.w3id.org/opm#Property">property</span>
+            <a href="#Property"
+               title="http://bimerr.iot.linkeddata.es/def/material-properties#Property">Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -310,6 +349,82 @@ This section provides details for each class and property defined by Material pr
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://www.w3id.org/opm#Property">
+      <h3>opm:Property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/opm#Property</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Property"
+               title="http://bimerr.iot.linkeddata.es/def/material-properties#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Property">
+      <h3>Property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/material-properties#Property</p>
+      <div class="comment">
+         <span class="markdown">Properties used in the building construction sector for the different elements involved.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.w3id.org/opm#Property" title="http://www.w3id.org/opm#Property">opm:Property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">ssn:Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ComponentProperty"
+               title="http://bimerr.iot.linkeddata.es/def/material-properties#ComponentProperty">Component Property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LayerProperty"
+               title="http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty">Layer Property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MaterialProperty"
+               title="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty">Material Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/ssn/Property">
+      <h3>ssn:Property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/ssn/Property</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Property"
+               title="http://bimerr.iot.linkeddata.es/def/material-properties#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://qudt.org/schema/qudt/Unit">
+      <h3>Unit<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://qudt.org/schema/qudt/Unit</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://qudt.org/schema/qudt/unit" title="http://qudt.org/schema/qudt/unit">unit</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
 </div><div id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
@@ -404,6 +519,9 @@ This section provides details for each class and property defined by Material pr
       <li>
          <a href="#hasPosition"
             title="http://bimerr.iot.linkeddata.es/def/material-properties#hasPosition">has position</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
       </li>
       <li>
          <a href="#HWD"
@@ -506,6 +624,9 @@ This section provides details for each class and property defined by Material pr
             title="http://bimerr.iot.linkeddata.es/def/material-properties#PERT">total use of renewable primary energy (PERT)</a>
       </li>
       <li>
+         <a href="#http://qudt.org/schema/qudt/unit" title="http://qudt.org/schema/qudt/unit">unit</a>
+      </li>
+      <li>
          <a href="#unitOfReference"
             title="http://bimerr.iot.linkeddata.es/def/material-properties#unitOfReference">unit of reference</a>
       </li>
@@ -603,7 +724,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -628,7 +749,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -653,7 +774,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -678,7 +799,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -703,7 +824,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -728,7 +849,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -753,7 +874,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -778,7 +899,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -803,7 +924,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -828,7 +949,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -853,7 +974,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -878,7 +999,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -903,7 +1024,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -928,7 +1049,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -953,7 +1074,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -978,7 +1099,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1003,7 +1124,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1028,7 +1149,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1053,7 +1174,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1078,7 +1199,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1103,7 +1224,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1128,7 +1249,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1153,7 +1274,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1161,6 +1282,160 @@ This section provides details for each class and property defined by Material pr
                <a href="#LayerProperty"
                   title="http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty">Layer Property</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/ssn/hasProperty">
+      <h3>has property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/ssn/hasProperty</p>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#ADPF"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#ADPF">abiotic depletion potential for fossil resources (ADPF)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#ADPE"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#ADPE">abiotic depletion potential for non fossil resources (ADPE)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#AP"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#AP">acidification potential of soil and water (AP)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#BSIHE"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#BSIHE">back side infrared hemispherical emissivity (BSIHE)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#BSSRNI"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#BSSRNI">back side solar reflectance at normal incidence (BSSRNI)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#BSVRNI"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#BSVRNI">back side visible reflectance at normal incidence (BSVRNI)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#CRU"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#CRU">components for re-usec (CRU)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#conductivity"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#conductivity">conductivity</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#conversionFactorTo1Kg"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#conversionFactorTo1Kg">conversion factor to 1 Kg</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#density"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#density">density</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#ODP"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#ODP">depletion potential of the stratospheric layer (ODP)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#doorHeatTransmissionCoefficient"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#doorHeatTransmissionCoefficient">door heat transmission coefficient</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#EP"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#EP">eutrophication potential (EP)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#EEE"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#EEE">exported electrical energy (EEE)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#EET"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#EET">exported thermal energy (EET)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#POCP"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#POCP">formation potential to tropospheric ozone (POCP)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#FSIHE"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#FSIHE">front side infrared hemispherical emissivity (FSIHE)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#FSVRNI"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#FSVRNI">front side visible reflectance at normal incidence (FSVRNI)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#FSSRNI"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#FSSRNI">front transmittance at normal incidence (FSSRNI)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#glassEnergyTransmissionFactor"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#glassEnergyTransmissionFactor">glass energy transmission factor</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#glassHeatTransmissionCoefficient"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#glassHeatTransmissionCoefficient">glass heat transmission coefficient</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#GWP"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#GWP">global warming potential (GWP)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasPosition"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#hasPosition">has position</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#HWD"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#HWD">hazardous waste disposed (HWD)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#ITNI"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#ITNI">infrared transmittance at normal incidence (ITNI)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#layerThickness"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#layerThickness">layer thickness</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#lengthWeight"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#lengthWeight">length weight</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#lifetime"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#lifetime">lifetime</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#linearThermalBridgeCoefficient"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#linearThermalBridgeCoefficient">linear thermal bridge coefficient</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#materialThickness"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#materialThickness">material thickness</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#MER"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#MER">materials for energy recovery (MER)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#MFR"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#MFR">materials for recycling (MFR)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#module"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#module">module</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#NHWD"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#NHWD">non hazardous waste disposed (NHWD)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#ODT"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#ODT">optical data type (ODT)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#percentage"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#percentage">percentage</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#RWD"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#RWD">radioactive waste disposed (RWD)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#referenceSize"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#referenceSize">reference size</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#roughness"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#roughness">roughness</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#solarAbsorptance"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#solarAbsorptance">solar absorptance</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#SM"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#SM">solar transmittance at normal incidence (STNI)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#STNI"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#STNI">solar transmittance at normal incidence (STNI)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#specificHeat"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#specificHeat">specific heat</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#surfaceWeight"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#surfaceWeight">surface weight</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#thermalAbsorptance"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#thermalAbsorptance">thermal absorptance</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#thermalResistance"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#thermalResistance">thermal resistance</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#PENRT"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#PENRT">total use of non renewable primary energy resource (PENRT)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#PERT"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#PERT">total use of renewable primary energy (PERT)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#unitOfReference"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#unitOfReference">unit of reference</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#FW"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#FW">use of net fresh water (FW)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#PENRE"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#PENRE">use of non renewable primary energy (PENRE)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#PENRM"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#PENRM">use of non renewable primary energy resources used as raw materials (PENRM)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#NRSF"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#NRSF">use of non renewable secondary fuels (NRSF)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#PERE"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#PERE">use of renewable primary energy (PERE)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#PERM"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#PERM">use of renewable primary energy resources used as raw materials (PERM)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#RSF"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#RSF">use of renewable secondary fuels (RSF)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#usedFromYear"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#usedFromYear">used from year</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#usedToYear"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#usedToYear">used to year</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#vapourDiffusionResistance"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#vapourDiffusionResistance">vapour diffusion resistance</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#vapourDiffusionResistanceWet"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#vapourDiffusionResistanceWet">vapour diffusion resistance wet</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#vapourDiffusionResistanceDry"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#vapourDiffusionResistanceDry">vapour diffussion resistance dry</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#visibleAbsorptance"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#visibleAbsorptance">visible absorptance</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#VTNI"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#VTNI">visible transmittance at normal incidence (VTNI)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#windowFrameHeatTransmissionCoefficient"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#windowFrameHeatTransmissionCoefficient">window frame heat transmission coefficient</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#windowFrameRungWidth"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#windowFrameRungWidth">window frame rung width</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#windowFrameWidth"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#windowFrameWidth">window frame width</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#WGSDSN"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#WGSDSN">window glass spectral data set name (WGSDSN)</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#windowThickness"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#windowThickness">window thickness</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#yield"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#yield">yield</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1178,7 +1453,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1203,7 +1478,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1228,7 +1503,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1253,7 +1528,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1278,7 +1553,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1303,7 +1578,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1328,7 +1603,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1353,7 +1628,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1378,7 +1653,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1403,7 +1678,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1428,7 +1703,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1453,7 +1728,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1478,7 +1753,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1503,7 +1778,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1528,7 +1803,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1553,7 +1828,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1578,7 +1853,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1603,7 +1878,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1628,7 +1903,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1653,7 +1928,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1678,7 +1953,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1703,7 +1978,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1728,7 +2003,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1753,7 +2028,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1778,13 +2053,30 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#MaterialProperty"
                   title="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty">Material Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://qudt.org/schema/qudt/unit">
+      <h3>unit<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://qudt.org/schema/qudt/unit</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1803,7 +2095,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1828,7 +2120,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1853,7 +2145,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1878,7 +2170,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1903,7 +2195,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1928,7 +2220,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1953,7 +2245,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -1978,7 +2270,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2003,7 +2295,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2028,7 +2320,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2053,7 +2345,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2078,7 +2370,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2103,7 +2395,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2128,7 +2420,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2153,7 +2445,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2178,7 +2470,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2203,7 +2495,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2228,7 +2520,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2253,7 +2545,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2278,7 +2570,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2303,7 +2595,7 @@ This section provides details for each class and property defined by Material pr
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/seas/hasProperty">has property</span>
+               <a href="#http://www.w3.org/ns/ssn/hasProperty" title="http://www.w3.org/ns/ssn/hasProperty">has property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has range</dt>
@@ -2314,6 +2606,43 @@ This section provides details for each class and property defined by Material pr
             </dd>
          </dl>
       </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://schema.org/value" title="http://schema.org/value">has value</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/maxValue" title="http://schema.org/maxValue">max value</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/minValue" title="http://schema.org/minValue">min value</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://schema.org/value">
+      <h3>has value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/value</p>
+   </div>
+   <div class="entity" id="http://schema.org/maxValue">
+      <h3>max value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/maxValue</p>
+   </div>
+   <div class="entity" id="http://schema.org/minValue">
+      <h3>min value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/minValue</p>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
