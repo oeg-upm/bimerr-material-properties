@@ -42,21 +42,30 @@
 # #################################################################
 # 
 # 
-# http://www.w3.org/ns/sosa/hasResult
-<http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "has result"@en .
+# http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement
+<http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a feature of interest and a measurement about it."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "has measurement"@en .
 # 
-# http://www.w3.org/ns/sosa/observedProperty
-<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#label> "observed property"@en .
+# http://bimerr.iot.linkeddata.es/def/material-properties#isMeasuredIn
+<http://bimerr.iot.linkeddata.es/def/material-properties#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the unit of measure used for a certain entity."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "is measured in"@en .
 # 
-# http://www.w3.org/ns/ssn/hasProperty
-<http://www.w3.org/ns/ssn/hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/ssn/hasProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has property"@en .
+# https://saref.etsi.org/core/hasProperty
+<https://saref.etsi.org/core/hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core/hasProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a feature of interest and a property of that feature."@en .
+<https://saref.etsi.org/core/hasProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has property"@en .
 # 
-# https://saref.etsi.org/core/isMeasuredIn
-<https://saref.etsi.org/core/isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://saref.etsi.org/core/isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "is measured in"@en .
+# https://saref.etsi.org/core/relatesToMeasurement
+<https://saref.etsi.org/core/relatesToMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core/relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a property and the measurements it relates to."@en .
+<https://saref.etsi.org/core/relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "relates to measurement"@en .
+# 
+# https://saref.etsi.org/core/relatesToProperty
+<https://saref.etsi.org/core/relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core/relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a measurement and the property it relates to."@en .
+<https://saref.etsi.org/core/relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#label> "relates to property"@en .
 # 
 # 
 # 
@@ -67,8 +76,14 @@
 # #################################################################
 # 
 # 
+# http://bimerr.iot.linkeddata.es/def/material-properties#sourceDatabase
+<http://bimerr.iot.linkeddata.es/def/material-properties#sourceDatabase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#sourceDatabase> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between the material property definition and the source database where it was found."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#sourceDatabase> <http://www.w3.org/2000/01/rdf-schema#label> "source database"@en .
+# 
 # https://saref.etsi.org/core/hasValue
 <https://saref.etsi.org/core/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/core/hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes."@en .
 <https://saref.etsi.org/core/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value"@en .
 # 
 # 
@@ -80,101 +95,511 @@
 # #################################################################
 # 
 # 
-# http://bimerr.iot.linkeddata.es/def/building#Component
-<http://bimerr.iot.linkeddata.es/def/building#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/building#Component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/building#Element> .
+# http://bimerr.iot.linkeddata.es/def/material-properties#AdhesiveAndFiller
+<http://bimerr.iot.linkeddata.es/def/material-properties#AdhesiveAndFiller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AdhesiveAndFiller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AdhesiveAndFiller> <http://www.w3.org/2000/01/rdf-schema#label> "Adhesive"@en .
 # 
-# http://bimerr.iot.linkeddata.es/def/building#Element
-<http://bimerr.iot.linkeddata.es/def/building#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/building#Element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+# http://bimerr.iot.linkeddata.es/def/material-properties#AdhesiveBridgesAndPreSplash
+<http://bimerr.iot.linkeddata.es/def/material-properties#AdhesiveBridgesAndPreSplash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AdhesiveBridgesAndPreSplash> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MasonryAndPlasterMortar> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AdhesiveBridgesAndPreSplash> <http://www.w3.org/2000/01/rdf-schema#label> "Adhesive bridges and pre-splash"@en .
 # 
-# http://bimerr.iot.linkeddata.es/def/building#Layer
-<http://bimerr.iot.linkeddata.es/def/building#Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/building#Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/building#Element> .
+# http://bimerr.iot.linkeddata.es/def/material-properties#AdobeMasonryUnfired
+<http://bimerr.iot.linkeddata.es/def/material-properties#AdobeMasonryUnfired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AdobeMasonryUnfired> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Masonry> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AdobeMasonryUnfired> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe masonry (unfired)"@en .
 # 
-# http://bimerr.iot.linkeddata.es/def/building#Material
-<http://bimerr.iot.linkeddata.es/def/building#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/building#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/building#Element> .
+# http://bimerr.iot.linkeddata.es/def/material-properties#AeratedConcreteMasonry
+<http://bimerr.iot.linkeddata.es/def/material-properties#AeratedConcreteMasonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AeratedConcreteMasonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Masonry> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AeratedConcreteMasonry> <http://www.w3.org/2000/01/rdf-schema#label> "Aerated concrete masonry"@en .
 # 
-# http://bimerr.iot.linkeddata.es/def/material-properties#ComponentProperty
-<http://bimerr.iot.linkeddata.es/def/material-properties#ComponentProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ComponentProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ComponentProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Properties related to building components."@en .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ComponentProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Component property"@en .
+# http://bimerr.iot.linkeddata.es/def/material-properties#Air
+<http://bimerr.iot.linkeddata.es/def/material-properties#Air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Air> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Air> <http://www.w3.org/2000/01/rdf-schema#label> "Air"@en .
 # 
-# http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty
-<http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Properties related to a layer element."@en .
-<http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Layer property"@en .
+# http://bimerr.iot.linkeddata.es/def/material-properties#BrickMasonry
+<http://bimerr.iot.linkeddata.es/def/material-properties#BrickMasonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#BrickMasonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Masonry> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#BrickMasonry> <http://www.w3.org/2000/01/rdf-schema#label> "Brick masonry"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#BuildingBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#BuildingBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#BuildingBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#BuildingBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Building board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#CeilingElement
+<http://bimerr.iot.linkeddata.es/def/material-properties#CeilingElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CeilingElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CeilingElement> <http://www.w3.org/2000/01/rdf-schema#label> "Ceiling element"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#CelluloseFibreInsulationMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#CelluloseFibreInsulationMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CelluloseFibreInsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CelluloseFibreInsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Cellulose fibre insulation material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#CementBoundEPSBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#CementBoundEPSBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CementBoundEPSBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CementBoundEPSBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Cement-bound EPS board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#CementBoundLightweightConcreteSlab
+<http://bimerr.iot.linkeddata.es/def/material-properties#CementBoundLightweightConcreteSlab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CementBoundLightweightConcreteSlab> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#BuildingBoard> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CementBoundLightweightConcreteSlab> <http://www.w3.org/2000/01/rdf-schema#label> "Cement-bound lightweight concrete slab"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ClayBuildingBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#ClayBuildingBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ClayBuildingBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#BuildingBoard> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ClayBuildingBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Clay building board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#CoatingImpregnation
+<http://bimerr.iot.linkeddata.es/def/material-properties#CoatingImpregnation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CoatingImpregnation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CoatingImpregnation> <http://www.w3.org/2000/01/rdf-schema#label> "Coating impregnation"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#CoconutFibreInsulatingMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#CoconutFibreInsulatingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CoconutFibreInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CoconutFibreInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Coconut fibre insulating material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#Concrete
+<http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteInWUQuality
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteInWUQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteInWUQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteInWUQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete in WU quality"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteMasonry
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteMasonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteMasonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Masonry> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteMasonry> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete masonry"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithEPSAggregate
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithEPSAggregate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithEPSAggregate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithEPSAggregate> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete with EPS aggregate"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithExpandedClayOrBrickChippingsAggregate
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithExpandedClayOrBrickChippingsAggregate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithExpandedClayOrBrickChippingsAggregate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithExpandedClayOrBrickChippingsAggregate> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete with expanded clay or brick chippings aggregate"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithExpandedShaleAggregate
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithExpandedShaleAggregate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithExpandedShaleAggregate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithExpandedShaleAggregate> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete with expanded shale aggregate"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithPumiceAggregate
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithPumiceAggregate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithPumiceAggregate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithPumiceAggregate> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete with pumice aggregate"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithSlagPumiceAggregate
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithSlagPumiceAggregate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithSlagPumiceAggregate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithSlagPumiceAggregate> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete with slag pumice aggregate"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithSulphateSlagCement
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithSulphateSlagCement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithSulphateSlagCement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConcreteWithSulphateSlagCement> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete with sulphate slag cement"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#CorkInsulatingMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#CorkInsulatingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CorkInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CorkInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Cork insulating material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#CottonInsulationMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#CottonInsulationMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CottonInsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#CottonInsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Cotton insulation material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#EPSInsulatingMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#EPSInsulatingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#EPSInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#EPSInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "EPS insulating material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ExternalPlaster
+<http://bimerr.iot.linkeddata.es/def/material-properties#ExternalPlaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ExternalPlaster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MasonryAndPlasterMortar> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ExternalPlaster> <http://www.w3.org/2000/01/rdf-schema#label> "External plaster"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#FacadeCladding
+<http://bimerr.iot.linkeddata.es/def/material-properties#FacadeCladding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FacadeCladding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FacadeCladding> <http://www.w3.org/2000/01/rdf-schema#label> "Facade cladding"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#FibreCementBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#FibreCementBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FibreCementBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#BuildingBoard> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FibreCementBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Fibre cement board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#Filler
+<http://bimerr.iot.linkeddata.es/def/material-properties#Filler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Filler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Filler> <http://www.w3.org/2000/01/rdf-schema#label> "Filler"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#FillingBrick
+<http://bimerr.iot.linkeddata.es/def/material-properties#FillingBrick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FillingBrick> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#BrickMasonry> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FillingBrick> <http://www.w3.org/2000/01/rdf-schema#label> "Filling brick"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#FilmProtectionMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#FilmProtectionMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FilmProtectionMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheetVapourBarrierFoil> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FilmProtectionMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Film protection material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#FlaxInsulatingMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#FlaxInsulatingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FlaxInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FlaxInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Flax insulating material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#FloorCovering
+<http://bimerr.iot.linkeddata.es/def/material-properties#FloorCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#label> "Floor covering"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#FoamGlassInsulationBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#FoamGlassInsulationBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FoamGlassInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FoamGlassInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Foam glass insulation board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#Gas
+<http://bimerr.iot.linkeddata.es/def/material-properties#Gas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Gas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Gas> <http://www.w3.org/2000/01/rdf-schema#label> "Gas"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#GlassWoolInsulatingMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#GlassWoolInsulatingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#GlassWoolInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#GlassWoolInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Glass wool insulating material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#GrassFibreInsulationBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#GrassFibreInsulationBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#GrassFibreInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#GrassFibreInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Grass fibre insulation board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowDownwards
+<http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowDownwards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowDownwards> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Air> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowDownwards> <http://www.w3.org/2000/01/rdf-schema#label> "Heat flow downwards"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowHorizontal
+<http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowHorizontal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowHorizontal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Air> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowHorizontal> <http://www.w3.org/2000/01/rdf-schema#label> "Heat flow horizontal"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowUpwards
+<http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowUpwards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowUpwards> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Air> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HeatFlowUpwards> <http://www.w3.org/2000/01/rdf-schema#label> "Heat flow upwards"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#HempInsulatingMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#HempInsulatingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HempInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HempInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Hemp insulating material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#HighPerforatedBrickMasonry
+<http://bimerr.iot.linkeddata.es/def/material-properties#HighPerforatedBrickMasonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HighPerforatedBrickMasonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#BrickMasonry> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HighPerforatedBrickMasonry> <http://www.w3.org/2000/01/rdf-schema#label> "High perforated brick masonry"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Insulating materials from renewable raw material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#InsulationMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#InsulationMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#InsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#InsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Insulation material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#InteriorPlaster
+<http://bimerr.iot.linkeddata.es/def/material-properties#InteriorPlaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#InteriorPlaster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MasonryAndPlasterMortar> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#InteriorPlaster> <http://www.w3.org/2000/01/rdf-schema#label> "Interior plaster"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#Masonry
+<http://bimerr.iot.linkeddata.es/def/material-properties#Masonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Masonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Masonry> <http://www.w3.org/2000/01/rdf-schema#label> "Masonry"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#MasonryAndPlasterMortar
+<http://bimerr.iot.linkeddata.es/def/material-properties#MasonryAndPlasterMortar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MasonryAndPlasterMortar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MasonryAndPlasterMortar> <http://www.w3.org/2000/01/rdf-schema#label> "Masonry and plaster mortar"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#Material
+<http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/2000/01/rdf-schema#comment> "A homogeneous or inhomogeneous substance that can be used to form elements (physical products or their components). (Definition taken from IFC)"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/2000/01/rdf-schema#comment> "IfcMaterial is a homogeneous or inhomogeneous substance that can be used to form elements (physical products or their components). (Definition taken from IFC 4.1)"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterial" .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Properties related to layer materials."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#sourceDatabase> .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Properties that describe building materials."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Material property"@en .
 # 
-# http://bimerr.iot.linkeddata.es/def/material-properties#ObservationResult
-<http://bimerr.iot.linkeddata.es/def/material-properties#ObservationResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ObservationResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Result> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ObservationResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Measurement> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ObservationResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
-_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://saref.etsi.org/core/UnitOfMeasure> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ObservationResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+# http://bimerr.iot.linkeddata.es/def/material-properties#MineralFoamInsulationBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#MineralFoamInsulationBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MineralFoamInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MineralFoamInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral foam insulation board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Mineral insulation material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#Mortar
+<http://bimerr.iot.linkeddata.es/def/material-properties#Mortar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Mortar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MasonryAndPlasterMortar> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Mortar> <http://www.w3.org/2000/01/rdf-schema#label> "Mortar"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#NaturalStone
+<http://bimerr.iot.linkeddata.es/def/material-properties#NaturalStone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#NaturalStone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#NaturalStone> <http://www.w3.org/2000/01/rdf-schema#label> "Natural stone"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#NaturalStoneMasonry
+<http://bimerr.iot.linkeddata.es/def/material-properties#NaturalStoneMasonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#NaturalStoneMasonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Masonry> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#NaturalStoneMasonry> <http://www.w3.org/2000/01/rdf-schema#label> "Natural stone masonry"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#NormalConcrete
+<http://bimerr.iot.linkeddata.es/def/material-properties#NormalConcrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#NormalConcrete> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#NormalConcrete> <http://www.w3.org/2000/01/rdf-schema#label> "Normal concrete"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#PURPIRInsulationBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#PURPIRInsulationBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PURPIRInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PURPIRInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#label> "PUR/PIR insulation board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#PerliteInsulationBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#PerliteInsulationBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PerliteInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PerliteInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Perlite insulation board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#PhenolicResinFoamBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#PhenolicResinFoamBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PhenolicResinFoamBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PhenolicResinFoamBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Phenolic resin foam board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#PlasterBase
+<http://bimerr.iot.linkeddata.es/def/material-properties#PlasterBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PlasterBase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MasonryAndPlasterMortar> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PlasterBase> <http://www.w3.org/2000/01/rdf-schema#label> "Plaster base"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#Platerboard
+<http://bimerr.iot.linkeddata.es/def/material-properties#Platerboard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Platerboard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#BuildingBoard> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Platerboard> <http://www.w3.org/2000/01/rdf-schema#label> "Plasterboard"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#PolyesterFibreInsulatingMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#PolyesterFibreInsulatingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PolyesterFibreInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PolyesterFibreInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Polyester fibre insulating material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#PolyethyleneInsulatingMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#PolyethyleneInsulatingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PolyethyleneInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PolyethyleneInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Polyethylene (PE) insulating material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ReedInsulationPanel
+<http://bimerr.iot.linkeddata.es/def/material-properties#ReedInsulationPanel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ReedInsulationPanel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ReedInsulationPanel> <http://www.w3.org/2000/01/rdf-schema#label> "Reed insulation panel"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#ReinforcedConcreteNormalConcreteWithReinforcement
+<http://bimerr.iot.linkeddata.es/def/material-properties#ReinforcedConcreteNormalConcreteWithReinforcement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ReinforcedConcreteNormalConcreteWithReinforcement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Concrete> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ReinforcedConcreteNormalConcreteWithReinforcement> <http://www.w3.org/2000/01/rdf-schema#label> "Reinforced concrete / normal concrete with reinforcement"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#RockWoolInsulationMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#RockWoolInsulationMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#RockWoolInsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#RockWoolInsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Rock wool insulation material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#RoofCovery
+<http://bimerr.iot.linkeddata.es/def/material-properties#RoofCovery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#RoofCovery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#RoofCovery> <http://www.w3.org/2000/01/rdf-schema#label> "Roof covery"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#RoofElement
+<http://bimerr.iot.linkeddata.es/def/material-properties#RoofElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#RoofElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#RoofElement> <http://www.w3.org/2000/01/rdf-schema#label> "Roof element"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#SandLimeBrickwork
+<http://bimerr.iot.linkeddata.es/def/material-properties#SandLimeBrickwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SandLimeBrickwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Masonry> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SandLimeBrickwork> <http://www.w3.org/2000/01/rdf-schema#label> "Sand-lime brickwork"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#Screed
+<http://bimerr.iot.linkeddata.es/def/material-properties#Screed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Screed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Screed> <http://www.w3.org/2000/01/rdf-schema#label> "Screed"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#SealantsAndAdhesive
+<http://bimerr.iot.linkeddata.es/def/material-properties#SealantsAndAdhesive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SealantsAndAdhesive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SealantsAndAdhesive> <http://www.w3.org/2000/01/rdf-schema#label> "Sealant and adhesive"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheet
+<http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheetVapourBarrierFoil> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheet> <http://www.w3.org/2000/01/rdf-schema#label> "Sealing sheet"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheetVapourBarrierFoil
+<http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheetVapourBarrierFoil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheetVapourBarrierFoil> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheetVapourBarrierFoil> <http://www.w3.org/2000/01/rdf-schema#label> "Sealing sheet vapour barrier foil"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#SheepWoolInsulation
+<http://bimerr.iot.linkeddata.es/def/material-properties#SheepWoolInsulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SheepWoolInsulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SheepWoolInsulation> <http://www.w3.org/2000/01/rdf-schema#label> "Sheep wool insulation"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#SheetsOfBondedLightweightAggregate
+<http://bimerr.iot.linkeddata.es/def/material-properties#SheetsOfBondedLightweightAggregate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SheetsOfBondedLightweightAggregate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#BuildingBoard> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SheetsOfBondedLightweightAggregate> <http://www.w3.org/2000/01/rdf-schema#label> "Sheets of bonded lightweight aggregate"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#SlottedBrickMasonry
+<http://bimerr.iot.linkeddata.es/def/material-properties#SlottedBrickMasonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SlottedBrickMasonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#BrickMasonry> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SlottedBrickMasonry> <http://www.w3.org/2000/01/rdf-schema#label> "Slotted brick masonry"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#StrawInsulationMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#StrawInsulationMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#StrawInsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#StrawInsulationMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Straw insulation material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#StructuralSolidWood
+<http://bimerr.iot.linkeddata.es/def/material-properties#StructuralSolidWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#StructuralSolidWood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#StructuralSolidWood> <http://www.w3.org/2000/01/rdf-schema#label> "Structural solid wood"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic insulating material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#TippingAndAggregate
+<http://bimerr.iot.linkeddata.es/def/material-properties#TippingAndAggregate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#TippingAndAggregate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#TippingAndAggregate> <http://www.w3.org/2000/01/rdf-schema#label> "Tipping and aggregate"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#VacuumInsulationPanel
+<http://bimerr.iot.linkeddata.es/def/material-properties#VacuumInsulationPanel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#VacuumInsulationPanel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#VacuumInsulationPanel> <http://www.w3.org/2000/01/rdf-schema#label> "Vacuum insulation panel"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#VapourBarrierAndBrake
+<http://bimerr.iot.linkeddata.es/def/material-properties#VapourBarrierAndBrake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#VapourBarrierAndBrake> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheetVapourBarrierFoil> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#VapourBarrierAndBrake> <http://www.w3.org/2000/01/rdf-schema#label> "Vapour barrier and brake"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#WallPaintAndCovering
+<http://bimerr.iot.linkeddata.es/def/material-properties#WallPaintAndCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WallPaintAndCovering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WallPaintAndCovering> <http://www.w3.org/2000/01/rdf-schema#label> "Wall paint and covering"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#WoodAndWoodBasedPanel
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodAndWoodBasedPanel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodAndWoodBasedPanel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#BuildingBoard> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodAndWoodBasedPanel> <http://www.w3.org/2000/01/rdf-schema#label> "Wood and wood based panel"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#WoodChipInsulationBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodChipInsulationBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodChipInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodChipInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Wood chip insulation board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#WoodFibreInsulatingMaterial
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodFibreInsulatingMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodFibreInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodFibreInsulatingMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Wood fibre insulating material"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#WoodShavingLooseSawdust
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodShavingLooseSawdust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodShavingLooseSawdust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#InsulatingMaterialsFromRenewableRawMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodShavingLooseSawdust> <http://www.w3.org/2000/01/rdf-schema#label> "Wood shaving (loose), sawdust"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#WoodWoolInsulationBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodWoolInsulationBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodWoolInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodWoolInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Wood wool insulation board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#WoodWoolMultiLayerInsulationBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodWoolMultiLayerInsulationBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodWoolMultiLayerInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#MineralInsulationMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#WoodWoolMultiLayerInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Wood-wool multi-layer insulation board"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#XPSInsulationBoard
+<http://bimerr.iot.linkeddata.es/def/material-properties#XPSInsulationBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#XPSInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterial> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#XPSInsulationBoard> <http://www.w3.org/2000/01/rdf-schema#label> "XPS insulation board"@en .
+# 
+# https://saref.etsi.org/core/FeatureOfInterest
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasValue> .
-_:genid2 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#ObservationResult> <http://www.w3.org/2000/01/rdf-schema#label> "Observation result"@en .
-# 
-# http://www.w3.org/ns/sosa/FeatureOfInterest
-<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Measurement> .
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/hasProperty> .
-_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/ssn/Property> .
-<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/ssn/hasProperty> .
-_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/ssn/Property> .
-<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature of interest"@en .
-# 
-# http://www.w3.org/ns/sosa/ObservableProperty
-<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
-<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Properties used in the building construction sector for the different elements involved."@en .
-<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Observable property"@en .
-# 
-# http://www.w3.org/ns/sosa/Observation
-<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/hasResult> .
-_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/sosa/Result> .
-<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/hasResult> .
-_:genid6 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/sosa/Result> .
-<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
-# 
-# http://www.w3.org/ns/sosa/Result
-<http://www.w3.org/ns/sosa/Result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/sosa/Result> <http://www.w3.org/2000/01/rdf-schema#label> "Result"@en .
-# 
-# http://www.w3.org/ns/ssn/Property
-<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasProperty> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Property> .
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "A feature of interest represents any real world entity from which a property is measured. (Definition taken from SAREF)"@en .
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature of interest"@en .
 # 
 # https://saref.etsi.org/core/Measurement
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#isMeasuredIn> .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/UnitOfMeasure> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToProperty> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Property> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#isMeasuredIn> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://saref.etsi.org/core/UnitOfMeasure> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasValue> .
+_:genid7 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement. (Definition taken from SAREF)"@en .
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement"@en .
+# 
+# https://saref.etsi.org/core/Property
+<https://saref.etsi.org/core/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToMeasurement> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Measurement> .
+<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature. (Definition taken from SAREF)"@en .
+<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
 # 
 # https://saref.etsi.org/core/UnitOfMeasure
 <https://saref.etsi.org/core/UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM). (Definition taken from SAREF)"@en .
 <https://saref.etsi.org/core/UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Unit of measure"@en .
 # 
 # 
@@ -188,97 +613,112 @@ _:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/sosa/Resu
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#AbioticDepletionPotentialForFossilResources
 <http://bimerr.iot.linkeddata.es/def/material-properties#AbioticDepletionPotentialForFossilResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AbioticDepletionPotentialForFossilResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#AbioticDepletionPotentialForFossilResources> <http://www.w3.org/2000/01/rdf-schema#label> "Abiotic depletion potential for fossil resources (ADPF)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#AbioticDepletionPotentialForNonFossilResources
 <http://bimerr.iot.linkeddata.es/def/material-properties#AbioticDepletionPotentialForNonFossilResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AbioticDepletionPotentialForNonFossilResources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#AbioticDepletionPotentialForNonFossilResources> <http://www.w3.org/2000/01/rdf-schema#label> "Abiotic depletion potential for non fossil resources (ADPE)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#AcidificationPotentialOfSoilAndWater
 <http://bimerr.iot.linkeddata.es/def/material-properties#AcidificationPotentialOfSoilAndWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#AcidificationPotentialOfSoilAndWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#AcidificationPotentialOfSoilAndWater> <http://www.w3.org/2000/01/rdf-schema#label> "Acidification potential of soil and water (AP)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#BacksideInfraredHemisphericalEmissivity
 <http://bimerr.iot.linkeddata.es/def/material-properties#BacksideInfraredHemisphericalEmissivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#BacksideInfraredHemisphericalEmissivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BacksideInfraredHemisphericalEmissivity> <http://www.w3.org/2000/01/rdf-schema#label> "Backside infrared hemispherical emissivity (BSIHE)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#BacksideSolarReflectanceAtNormalIncidence
 <http://bimerr.iot.linkeddata.es/def/material-properties#BacksideSolarReflectanceAtNormalIncidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#BacksideSolarReflectanceAtNormalIncidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BacksideSolarReflectanceAtNormalIncidence> <http://www.w3.org/2000/01/rdf-schema#label> "Backside solar reflectance at normal incidence (BSSRNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#BacksideVisibleReflectanceAtNormalIncidence
 <http://bimerr.iot.linkeddata.es/def/material-properties#BacksideVisibleReflectanceAtNormalIncidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#BacksideVisibleReflectanceAtNormalIncidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#BacksideVisibleReflectanceAtNormalIncidence> <http://www.w3.org/2000/01/rdf-schema#label> "Backside visible reflectance at normal incidence (BSVRNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#ComponentsForReusec
 <http://bimerr.iot.linkeddata.es/def/material-properties#ComponentsForReusec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ComponentsForReusec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ComponentsForReusec> <http://www.w3.org/2000/01/rdf-schema#label> "Components for re-usec (CRU)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#Conductivity
 <http://bimerr.iot.linkeddata.es/def/material-properties#Conductivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Conductivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#ConversionFactorTo1Kg
 <http://bimerr.iot.linkeddata.es/def/material-properties#ConversionFactorTo1Kg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ConversionFactorTo1Kg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#Density
 <http://bimerr.iot.linkeddata.es/def/material-properties#Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#DepletionPotentialOfTheStratosphericLayer
 <http://bimerr.iot.linkeddata.es/def/material-properties#DepletionPotentialOfTheStratosphericLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#DepletionPotentialOfTheStratosphericLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#DepletionPotentialOfTheStratosphericLayer> <http://www.w3.org/2000/01/rdf-schema#label> "Depletion potential of the stratospheric layer (ODP)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#DoorHeatTransmissionCoefficient
 <http://bimerr.iot.linkeddata.es/def/material-properties#DoorHeatTransmissionCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#DoorHeatTransmissionCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#EutrophicationPotential
 <http://bimerr.iot.linkeddata.es/def/material-properties#EutrophicationPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#EutrophicationPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#EutrophicationPotential> <http://www.w3.org/2000/01/rdf-schema#label> "Eutrophication Potential (EP)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#ExportedElectricalEnergy
 <http://bimerr.iot.linkeddata.es/def/material-properties#ExportedElectricalEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ExportedElectricalEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ExportedElectricalEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "Exported electrical energy (EEE)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#ExportedThermalEnergy
 <http://bimerr.iot.linkeddata.es/def/material-properties#ExportedThermalEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#ExportedThermalEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ExportedThermalEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "Exported thermal energy (EET)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#FormationPotentialToTroposphericOzone
 <http://bimerr.iot.linkeddata.es/def/material-properties#FormationPotentialToTroposphericOzone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FormationPotentialToTroposphericOzone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FormationPotentialToTroposphericOzone> <http://www.w3.org/2000/01/rdf-schema#label> "Formation potential to tropospheric ozone (POCP)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#FrontTransmittanceAtNormalIncidence
 <http://bimerr.iot.linkeddata.es/def/material-properties#FrontTransmittanceAtNormalIncidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FrontTransmittanceAtNormalIncidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FrontTransmittanceAtNormalIncidence> <http://www.w3.org/2000/01/rdf-schema#label> "Front transmittance at normal incidence (FSSRNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#FrontsideInfraredHemisphericalEmissivity
 <http://bimerr.iot.linkeddata.es/def/material-properties#FrontsideInfraredHemisphericalEmissivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FrontsideInfraredHemisphericalEmissivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FrontsideInfraredHemisphericalEmissivity> <http://www.w3.org/2000/01/rdf-schema#label> "Frontside infrared hemispherical emissivity (FSIHE)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#FrontsideVisibleReflectanceAtNormalIncidence
 <http://bimerr.iot.linkeddata.es/def/material-properties#FrontsideVisibleReflectanceAtNormalIncidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#FrontsideVisibleReflectanceAtNormalIncidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#FrontsideVisibleReflectanceAtNormalIncidence> <http://www.w3.org/2000/01/rdf-schema#label> "Frontside visible reflectance at normal incidence (FSVRNI)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#GlassEnergyTransmissionFactor
 <http://bimerr.iot.linkeddata.es/def/material-properties#GlassEnergyTransmissionFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#GlassEnergyTransmissionFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#GlassHeatTransmissionCoefficient
 <http://bimerr.iot.linkeddata.es/def/material-properties#GlassHeatTransmissionCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#GlassHeatTransmissionCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#GlobalWarmingPotential
 <http://bimerr.iot.linkeddata.es/def/material-properties#GlobalWarmingPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#GlobalWarmingPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#GlobalWarmingPotential> <http://www.w3.org/2000/01/rdf-schema#label> "Global warming potential (GWP)"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#HazardousWasteDisposed
 <http://bimerr.iot.linkeddata.es/def/material-properties#HazardousWasteDisposed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#HazardousWasteDisposed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#HazardousWasteDisposed> <http://www.w3.org/2000/01/rdf-schema#label> "Hazardous waste disposed (HWD)"@en .
-# 
-# http://bimerr.iot.linkeddata.es/def/material-properties#LayerPosition
-<http://bimerr.iot.linkeddata.es/def/material-properties#LayerPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#LayerPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty> .
-# 
-# http://bimerr.iot.linkeddata.es/def/material-properties#LayerThickness
-<http://bimerr.iot.linkeddata.es/def/material-properties#LayerThickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#LayerThickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#LayerProperty> .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#LengthWeight
 <http://bimerr.iot.linkeddata.es/def/material-properties#LengthWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -329,6 +769,10 @@ _:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/sosa/Resu
 <http://bimerr.iot.linkeddata.es/def/material-properties#ReferenceSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ReferenceSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 # 
+# http://bimerr.iot.linkeddata.es/def/material-properties#Roughness
+<http://bimerr.iot.linkeddata.es/def/material-properties#Roughness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Roughness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
+# 
 # http://bimerr.iot.linkeddata.es/def/material-properties#SolarAbsorptance
 <http://bimerr.iot.linkeddata.es/def/material-properties#SolarAbsorptance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#SolarAbsorptance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
@@ -353,6 +797,10 @@ _:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/sosa/Resu
 # http://bimerr.iot.linkeddata.es/def/material-properties#ThermalResistance
 <http://bimerr.iot.linkeddata.es/def/material-properties#ThermalResistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ThermalResistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
+# 
+# http://bimerr.iot.linkeddata.es/def/material-properties#Thickness
+<http://bimerr.iot.linkeddata.es/def/material-properties#Thickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Thickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#TotalUseOfNonRenewablePrimaryEnergyResource
 <http://bimerr.iot.linkeddata.es/def/material-properties#TotalUseOfNonRenewablePrimaryEnergyResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
