@@ -396,7 +396,7 @@
     "@value" : "props"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.0.4"
+    "@value" : "0.0.5"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#ASHRAE",
@@ -1341,14 +1341,15 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A designation by which materials of an element constructed of a number of material layers is known and through which the relative positioning of individual layers can be expressed."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Material layer set"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@language" : "en",
-    "@value" : "A designation by which materials of an element constructed of a number of material layers is known and through which the relative positioning of individual layers can be expressed."
-  }, {
     "@language" : "en",
     "@value" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialLayerSet"
   } ],

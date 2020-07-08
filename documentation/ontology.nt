@@ -5,7 +5,7 @@
 <http://bimerr.iot.linkeddata.es/def/material-properties#> <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" .
 <http://bimerr.iot.linkeddata.es/def/material-properties#> <http://purl.org/dc/elements/1.1/title> "Material properties ontology"@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "props" .
-<http://bimerr.iot.linkeddata.es/def/material-properties#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.4" .
+<http://bimerr.iot.linkeddata.es/def/material-properties#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.5" .
 # 
 # 
 # #################################################################
@@ -519,8 +519,8 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialLayer> .
 _:genid9 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A designation by which materials of an element constructed of a number of material layers is known and through which the relative positioning of individual layers can be expressed."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/2000/01/rdf-schema#label> "Material layer set"@en .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "A designation by which materials of an element constructed of a number of material layers is known and through which the relative positioning of individual layers can be expressed."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialLayerSet"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile

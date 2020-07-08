@@ -16,7 +16,7 @@
         <dc:publisher>http://www.oeg-upm.net/</dc:publisher>
         <dc:title xml:lang="en">Material properties ontology</dc:title>
         <vann:preferredNamespacePrefix>props</vann:preferredNamespacePrefix>
-        <owl:versionInfo>0.0.4</owl:versionInfo>
+        <owl:versionInfo>0.0.5</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -974,8 +974,8 @@
                 <owl:onClass rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A designation by which materials of an element constructed of a number of material layers is known and through which the relative positioning of individual layers can be expressed.</rdfs:comment>
         <rdfs:label xml:lang="en">Material layer set</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">A designation by which materials of an element constructed of a number of material layers is known and through which the relative positioning of individual layers can be expressed.</rdfs:seeAlso>
         <rdfs:seeAlso xml:lang="en">http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialLayerSet</rdfs:seeAlso>
     </owl:Class>
     

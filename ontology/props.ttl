@@ -21,7 +21,7 @@
                                                             <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ;
                                                             <http://purl.org/dc/elements/1.1/title> "Material properties ontology"@en ;
                                                             vann:preferredNamespacePrefix "props" ;
-                                                            owl:versionInfo "0.0.4" .
+                                                            owl:versionInfo "0.0.5" .
 
 #################################################################
 #    Annotation properties
@@ -595,9 +595,9 @@ props:MaterialLayerSet rdf:type owl:Class ;
                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                          owl:onClass props:MaterialLayer
                                        ] ;
+                       rdfs:comment "A designation by which materials of an element constructed of a number of material layers is known and through which the relative positioning of individual layers can be expressed."@en ;
                        rdfs:label "Material layer set"@en ;
-                       rdfs:seeAlso "A designation by which materials of an element constructed of a number of material layers is known and through which the relative positioning of individual layers can be expressed."@en ,
-                                    "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialLayerSet"@en .
+                       rdfs:seeAlso "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialLayerSet"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile
