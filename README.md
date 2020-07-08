@@ -5,4 +5,4 @@ This repository contains the code and documentation generated for the Material P
 
 Current version of the ontology model
 
-![Current version of the model](https://github.com/oeg-upm/bimerr-material-properties/blob/master/diagrams/diagram.jpg "Material Properties model")
+![Current version of the model](https://github.com/oeg-upm/bimerr-material-properties/blob/master/diagrams/diagram.svg "Material Properties model")
