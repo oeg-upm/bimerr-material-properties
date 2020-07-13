@@ -141,6 +141,8 @@
 
 
     <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/Measurement"/>
         <rdfs:comment xml:lang="en">A relationship between a feature of interest and a measurement about it.</rdfs:comment>
         <rdfs:label xml:lang="en">has measurement</rdfs:label>
     </owl:ObjectProperty>
@@ -157,22 +159,22 @@
     
 
 
-    <!-- http://bimerr.iot.linkeddata.es/def/material-properties#propertyReference -->
+    <!-- http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyFromDatabase -->
 
 
-    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#propertyReference">
+    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyFromDatabase">
         <rdfs:comment xml:lang="en">Relates a material&apos;s property with the database where it is defined.</rdfs:comment>
-        <rdfs:label xml:lang="en">property reference</rdfs:label>
+        <rdfs:label xml:lang="en">is property from database</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://bimerr.iot.linkeddata.es/def/material-properties#propertyValueReference -->
+    <!-- http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyValueFromDatabase -->
 
 
-    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#propertyValueReference">
+    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyValueFromDatabase">
         <rdfs:comment xml:lang="en">Relates a property value with the database where it comes from.</rdfs:comment>
-        <rdfs:label xml:lang="en">property value reference</rdfs:label>
+        <rdfs:label xml:lang="en">is property value from database</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -191,6 +193,8 @@
 
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasProperty">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/Property"/>
         <rdfs:comment xml:lang="en">A relationship between a feature of interest and a property of that feature.</rdfs:comment>
         <rdfs:label xml:lang="en">has property</rdfs:label>
     </owl:ObjectProperty>
@@ -301,7 +305,6 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/building#Element">
-        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasConstruction"/>
@@ -314,6 +317,18 @@
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An element is a generalization of all components that make up an AEC product.</rdfs:comment>
@@ -889,7 +904,18 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#Material">
-        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A homogeneous or inhomogeneous substance that can be used to form elements (physical products or their components). (Definition taken from IFC)</rdfs:comment>
         <rdfs:label xml:lang="en">Material</rdfs:label>
         <rdfs:seeAlso>http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterial</rdfs:seeAlso>
@@ -901,11 +927,22 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent">
-        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial"/>
                 <owl:allValuesFrom rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#Material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A single and identifiable part of an element which is constructed of a number of part (one or more) each having an individual material.</rdfs:comment>
@@ -919,7 +956,18 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet">
-        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialConstituent"/>
@@ -948,11 +996,22 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer">
-        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial"/>
                 <owl:allValuesFrom rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#Material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A single and identifiable part of an element which is constructed of a number of layers (one or more).</rdfs:comment>
@@ -966,7 +1025,18 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet">
-        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialLayer"/>
@@ -985,11 +1055,22 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile">
-        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial"/>
                 <owl:allValuesFrom rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#Material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A single and identifiable cross section of an element which is constructed of a number of profiles (one or more).</rdfs:comment>
@@ -1003,7 +1084,18 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet">
-        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialProfile"/>
@@ -1025,7 +1117,7 @@
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#propertyReference"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyFromDatabase"/>
                 <owl:allValuesFrom rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1048,7 +1140,7 @@
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Measurement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#propertyValueReference"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyValueFromDatabase"/>
                 <owl:allValuesFrom rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1283,7 +1375,7 @@
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#SealingSheetVapourBarrierFoil">
         <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#Material"/>
-        <rdfs:label xml:lang="en">Sealing sheet vapour barrier foil</rdfs:label>
+        <rdfs:label xml:lang="en">Sealing sheet, vapour barrier, foil</rdfs:label>
     </owl:Class>
     
 
@@ -1343,7 +1435,7 @@
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#StructuralSolidWood">
         <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#Material"/>
-        <rdfs:label xml:lang="en">Structural solid wood</rdfs:label>
+        <rdfs:label xml:lang="en">Structural (solid) wood</rdfs:label>
     </owl:Class>
     
 
@@ -2159,6 +2251,16 @@
     <owl:NamedIndividual rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#KG-SO2-EQ">
         <rdf:type rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
         <rdfs:label xml:lang="en">Kilograms of Sulfur dioxide</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://bimerr.iot.linkeddata.es/def/material-properties#LayerPosition -->
+
+
+    <owl:NamedIndividual rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#LayerPosition">
+        <rdf:type rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"/>
+        <rdfs:label xml:lang="en">Layer position</rdfs:label>
     </owl:NamedIndividual>
     
 
