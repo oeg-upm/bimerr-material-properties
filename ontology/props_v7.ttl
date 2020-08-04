@@ -1,0 +1,932 @@
+@prefix : <http://bimerr.iot.linkeddata.es/def/material-properties#> .
+@prefix dc: <http://purl.org/dc/elements/1.1> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix saref: <https://saref.etsi.org/core/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix mat: <http://bimerr.iot.linkeddata.es/def/material-properties#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix building: <http://bimerr.iot.linkeddata.es/def/building#> .
+@base <http://bimerr.iot.linkeddata.es/def/material-properties#> .
+
+<http://bimerr.iot.linkeddata.es/def/material-properties#> rdf:type owl:Ontology ;
+                                                            <http://purl.org/dc/elements/1.1/creator> "María Poveda-Villalón (Ontology Engineering Group, Universidad Politécnica de Madrid)" ,
+                                                                                                      "Serge Chávez-Feria (Ontology Engineering Group, Universidad Politécnica de Madrid)" ;
+                                                            <http://purl.org/dc/elements/1.1/description> "The material properties ontology provides the vocabulary to describe the composition of building elements."@en ;
+                                                            <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ;
+                                                            <http://purl.org/dc/elements/1.1/title> "Material properties ontology"@en ;
+                                                            vann:preferredNamespacePrefix "mat" ;
+                                                            owl:versionInfo "0.0.7" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialLayerSet
+mat:hasMaterialLayerSet rdf:type owl:ObjectProperty ;
+                        rdfs:comment "Relation between an element and its construction based in material layers."@en ;
+                        rdfs:label "has material layer set"@en .
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialProfileSet
+mat:hasMaterialProfileSet rdf:type owl:ObjectProperty ;
+                        rdfs:comment "Relation between an element and its construction based in material profiles."@en ;
+                        rdfs:label "has material profile set"@en .
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialConstituentSet
+mat:hasMaterialConstituentSet rdf:type owl:ObjectProperty ;
+                        rdfs:comment "Relation between an element and its construction based in material constituents."@en ;
+                        rdfs:label "has material constituent set"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial
+mat:hasMaterial rdf:type owl:ObjectProperty ;
+                  rdfs:comment "Relation between a construction component (Layer, profile, constituent) and the materials that define them."@en ;
+                  rdfs:label "has material"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialCategory
+mat:hasMaterialCategory rdf:type owl:ObjectProperty ;
+                          rdfs:comment "Relationship to indicate the category of an specific material."@en ;
+                          rdfs:label "has material category"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialConstituent
+mat:hasMaterialConstituent rdf:type owl:ObjectProperty ;
+                             rdfs:comment "A relation between a constituent set and the specific material constituents."@en ;
+                             rdfs:label "has material constituent"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialLayer
+mat:hasMaterialLayer rdf:type owl:ObjectProperty ;
+                       rdfs:comment "A relation between a layer set and the specific material layers."@en ;
+                       rdfs:label "has material layer"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialProfile
+mat:hasMaterialProfile rdf:type owl:ObjectProperty ;
+                         rdfs:comment "A relation between a profile set and the specific material profiles."@en ;
+                         rdfs:label "has material profile"@en .
+
+
+###  https://saref.etsi.org/core/hasProperty
+saref:hasProperty rdf:type owl:ObjectProperty ;
+                         rdfs:comment "A relationship between a feature of interest and a property of that feature."@en ;
+                         rdfs:label "has property"@en .
+
+
+###  https://saref.etsi.org/core/hasMeasurement
+saref:hasMeasurement rdf:type owl:ObjectProperty ;
+                         rdfs:comment "A relationship between a feature of interest and a measurement about it."@en ;
+                         rdfs:label "has measurement"@en .
+
+
+###  https://saref.etsi.org/core/relatesToProperty
+saref:relatesToProperty rdf:type owl:ObjectProperty ;
+                         rdfs:comment "A relationship between a measurement and the property it relates to."@en ;
+                         rdfs:label "relates to property"@en .
+
+
+###  https://saref.etsi.org/core/isMeasuredIn
+saref:isMeasuredIn rdf:type owl:ObjectProperty ;
+                         rdfs:comment "A relationship identifying the unit of measure used for a certain entity."@en ;
+                         rdfs:label "is measured in"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyFromDatabase
+mat:isPropertyFromDatabase rdf:type owl:ObjectProperty ;
+                         rdfs:comment "A relationship identifying in which database the property is defined."@en ;
+                         rdfs:label "is property from database"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyValueFromDatabase
+mat:isPropertyValueFromDatabase rdf:type owl:ObjectProperty ;
+                         rdfs:comment "A relationship identifying in which database the property value is defined."@en ;
+                         rdfs:label "is property value from database"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:DatatypeProperty ;
+rdfs:label "pref label"@en ;
+rdfs:comment "relationship between a concept and its preferred label"@en .
+
+###  https://saref.etsi.org/core/hasValue
+saref:hasValue rdf:type owl:DatatypeProperty ;
+rdfs:label "has value"@en ;
+rdfs:comment "A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes."@en .
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#identifierInDatabase
+mat:identifierInDatabase rdf:type owl:DatatypeProperty ;
+rdfs:comment "A relationship to indicate the identifier used in the source database"@en;
+rdfs:label "identifier in database"@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://bimerr.iot.linkeddata.es/def/building#Element
+building:Element rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty mat:hasMaterialLayerSet ;
+                                   owl:allValuesFrom mat:MaterialLayerSet
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                  owl:onProperty mat:hasMaterialProfileSet ;
+                                  owl:allValuesFrom mat:MaterialProfileSet 
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                 owl:onProperty mat:hasMaterialConstituentSet ;
+                                 owl:allValuesFrom mat:MaterialConstituentSet
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                 owl:onProperty mat:hasMaterial ;
+                                 owl:allValuesFrom mat:Material 
+                                 ] ;
+
+                 rdfs:comment "An element is a generalization of all components that make up an AEC product."@en ;
+                 rdfs:label "Element"@en ;
+                 rdfs:seeAlso "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcElement"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#Material
+mat:Material rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty mat:identifierInDatabase ;
+                                owl:allValuesFrom xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty saref:hasProperty ;
+                                owl:allValuesFrom saref:Property
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty saref:hasMeasurement ;
+                                owl:allValuesFrom saref:Measurement
+                              ] ;
+               rdfs:comment "A homogeneous or inhomogeneous substance that can be used to form elements (physical products or their components). (Definition taken from IFC)"@en ;
+               rdfs:label "Material"@en ;
+               rdfs:seeAlso "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterial"^^xsd:string .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent
+mat:MaterialConstituent rdf:type owl:Class ;
+                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                            owl:onProperty mat:hasMaterial ;
+                                            owl:allValuesFrom mat:Material
+                                          ] ;
+                          rdfs:comment "A single and identifiable part of an element which is constructed of a number of part (one or more) each having an individual material."@en ;
+                          rdfs:label "Material constituent"@en ;
+                          rdfs:seeAlso "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialConstituent"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet
+mat:MaterialConstituentSet rdf:type owl:Class ;
+                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                               owl:onProperty mat:hasMaterialConstituent ;
+                                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass mat:MaterialConstituent
+                                             ] ;
+                             rdfs:comment "A collection of individual material constituents, each assigning a material to a part of an element."@en ;
+                             rdfs:label "Material constituent set"@en ;
+                             rdfs:seeAlso "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialConstituentSet"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer
+mat:MaterialLayer rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty mat:hasMaterial ;
+                                      owl:allValuesFrom mat:Material
+                                    ] ;
+                    rdfs:comment "A single and identifiable part of an element which is constructed of a number of layers (one or more)."@en ;
+                    rdfs:label "Material layer"@en ;
+                    rdfs:seeAlso "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialLayer"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet
+mat:MaterialLayerSet rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty mat:hasMaterialLayer ;
+                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass mat:MaterialLayer
+                                       ] ;
+                       rdfs:comment "A designation by which materials of an element constructed of a number of material layers is known and through which the relative positioning of individual layers can be expressed."@en ;
+                       rdfs:label "Material layer set"@en ;
+                       rdfs:seeAlso "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialLayerSet"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile
+mat:MaterialProfile rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty mat:hasMaterial ;
+                                        owl:allValuesFrom mat:Material
+                                      ] ;
+                      rdfs:comment "A single and identifiable cross section of an element which is constructed of a number of profiles (one or more)."@en ;
+                      rdfs:label "Material profile"@en ;
+                      rdfs:seeAlso "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialProfile"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet
+mat:MaterialProfileSet rdf:type owl:Class ;
+                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                           owl:onProperty mat:hasMaterialProfile ;
+                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass mat:MaterialProfile
+                                         ] ;
+                         rdfs:comment "A designation by which individual material(s) of a prismatic element (for example, beam or column) constructed of a single or multiple material profiles is known."@en ;
+                         rdfs:label "Material profile set"@en ;
+                         rdfs:seeAlso "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialProfileSet"@en .
+
+
+###  https://saref.etsi.org/core/Property
+saref:Property rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty mat:isPropertyFromDatabase ;
+                                  owl:allValuesFrom mat:MaterialDatabase 
+                                ] ;
+               rdfs:comment "A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature. (Definition taken from SAREF)"@en ;
+               rdfs:label "Property"@en .
+
+
+###  https://saref.etsi.org/core/Measurement
+saref:Measurement rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty saref:isMeasuredIn ;
+                                    owl:allValuesFrom saref:UnitOfMeasure
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty saref:relatesToProperty ;
+                                    owl:allValuesFrom saref:Property
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty saref:isMeasuredIn ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass saref:UnitOfMeasure
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty mat:isPropertyValueFromDatabase ;
+                                    owl:allValuesFrom mat:MaterialDatabase
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty saref:hasValue ;
+                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                  ] ;
+                  rdfs:comment "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement. (Definition taken from SAREF)"@en ;
+                  rdfs:label "Measurement"@en .
+
+
+###  https://saref.etsi.org/core/UnitOfMeasure
+saref:UnitOfMeasure rdf:type owl:Class ;
+rdfs:comment "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called watt. Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM)."@en ;
+rdfs:label "Unit of Measure"@en .
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase
+mat:MaterialDatabase rdf:type owl:Class ;
+rdfs:comment "Represents the set of available databases for building materials."@en ;
+rdfs:label "Material Database"@en .
+
+#### Hierarchy of Materials
+
+mat:SealantsAndAdhesives rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Sealants AndAdhesives"@en .
+
+mat:OutdoorFacilities rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Outdoor Facilities"@en .
+
+mat:BuildingBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Building Boards"@en .
+
+mat:FloorCoveringAndSkirtingBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Floor Covering And Skirting Boards"@en .
+
+mat:RoofCoverings rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Roof Coverings"@en .
+
+mat:InsulatingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Insulating Materials"@en .
+
+mat:CeilingAndRoofElements rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Ceiling And Roof Elements"@en .
+
+mat:SealingSheetVapourBarrierFoils rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Sealing Sheet Vapour Barrier Foils"@en .
+
+mat:WallElements rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Wall Elements"@en .
+
+mat:NaturalStones rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Natural Stones"@en .
+
+mat:Gases rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Gases"@en .
+
+mat:Water rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Water"@en .
+
+mat:BuildingServices rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Building Services"@en .
+
+mat:Doors rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Doors"@en .
+
+mat:Screeds rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Screeds"@en .
+
+mat:FacadeCladdings rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Facade Claddings"@en .
+
+mat:AdhesivesAndFillers rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Adhesives And Fillers"@en .
+
+mat:ConstructiveSolidWood rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Constructive Solid Wood"@en .
+
+mat:MasonryAndPlasterMortar rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Masonry And Plaster Mortar"@en .
+
+mat:Masonry rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Masonry"@en .
+
+mat:InSituConcretes rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "In Situ Concretes"@en .
+
+mat:TippingsAndAggregates rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Tippings And Aggregates"@en .
+
+mat:WallPaintsAndCoverings rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Wall Paints And Coverings"@en .
+
+mat:MountingAccesoriesIndividualBuildingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Mounting Accesories Individual Building Materials"@en .
+
+mat:CoatingsAndImpregnations rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Coatings And Impregnations"@en .
+
+mat:Processes rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Processes"@en .
+
+mat:WindowsAndComponents rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Windows And Components"@en .
+
+mat:Air rdf:type owl:Class ;
+rdfs:subClassOf mat:Material ;
+rdfs:label "Air"@en .
+
+
+mat:BitumenCoatings rdf:type owl:Class ;
+rdfs:subClassOf mat:SealantsAndAdhesives ;
+rdfs:label "Bitumen Coatings"@en .
+
+mat:BitumenAdhesivesSealantsAndFillers rdf:type owl:Class ;
+rdfs:subClassOf mat:SealantsAndAdhesives ;
+rdfs:label "Bitumen Adhesives Sealants And Fillers"@en .
+
+mat:BitumenGroutingCompounds rdf:type owl:Class ;
+rdfs:subClassOf mat:SealantsAndAdhesives ;
+rdfs:label "Bitumen Grouting Compounds"@en .
+
+mat:SealingTapesAndThermalBridgeInterrupters rdf:type owl:Class ;
+rdfs:subClassOf mat:SealantsAndAdhesives ;
+rdfs:label "Sealing Tapes And Thermal Bridge Interrupters"@en .
+
+mat:Sealants rdf:type owl:Class ;
+rdfs:subClassOf mat:SealantsAndAdhesives ;
+rdfs:label "Sealants"@en .
+
+mat:LiquidFoils rdf:type owl:Class ;
+rdfs:subClassOf mat:SealantsAndAdhesives ;
+rdfs:label "Liquid Foils"@en .
+
+
+mat:AsphaltPavements rdf:type owl:Class ;
+rdfs:subClassOf mat:OutdoorFacilities ;
+rdfs:label "Asphalt Pavements"@en .
+
+mat:FloorCoveringCapableOfInfiltration rdf:type owl:Class ;
+rdfs:subClassOf mat:OutdoorFacilities ;
+rdfs:label "Floor Covering Capable Of Infiltration"@en .
+
+
+mat:FibreCementBoardsInterior rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingBoards ;
+rdfs:label "Fibre Cement Boards Interior"@en .
+
+mat:Plasterboard rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingBoards ;
+rdfs:label "Plasterboard"@en .
+
+mat:WoodAndWoodBasedPanels rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingBoards ;
+rdfs:label "Wood And Wood Based Panels"@en .
+
+mat:ClayBuildingBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingBoards ;
+rdfs:label "Clay Building Boards"@en .
+
+mat:SheetsOfBondedLightweightAggregates rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingBoards ;
+rdfs:label "Sheets Of Bonded Lightweight Aggregates"@en .
+
+mat:CementBoundLightweightConcreteSlab rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingBoards ;
+rdfs:label "Cement Bound Lightweight Concrete Slab"@en .
+
+
+mat:ResilientFloorCoverings rdf:type owl:Class ;
+rdfs:subClassOf mat:FloorCoveringAndSkirtingBoards ;
+rdfs:label "Resilient Floor Coverings"@en .
+
+mat:SolidFloorCoveringsOfWoodAndOtherNaturalRawMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:FloorCoveringAndSkirtingBoards ;
+rdfs:label "Solid Floor Coverings Of Wood And Other Natural Raw Materials"@en .
+
+mat:MineralFloorCoverings rdf:type owl:Class ;
+rdfs:subClassOf mat:FloorCoveringAndSkirtingBoards ;
+rdfs:label "Mineral Floor Coverings"@en .
+
+mat:TextileFloorCoverings rdf:type owl:Class ;
+rdfs:subClassOf mat:FloorCoveringAndSkirtingBoards ;
+rdfs:label "Textile Floor Coverings"@en .
+
+mat:UnderlaysAndBackCoatingsOfFloorCoverings rdf:type owl:Class ;
+rdfs:subClassOf mat:FloorCoveringAndSkirtingBoards ;
+rdfs:label "Underlays And Back Coatings Of Floor Coverings"@en .
+
+
+
+mat:InsulatingMaterialsFromRenewableRawMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterials ;
+rdfs:label "Insulating Materials From Renewable Raw Materials"@en .
+
+mat:MineralInsulationMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterials ;
+rdfs:label "Mineral Insulation Materials"@en .
+
+mat:SyntheticInsulatingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterials ;
+rdfs:label "Synthetic Insulating Materials"@en .
+
+
+mat:WaterproofingMembranes rdf:type owl:Class ;
+rdfs:subClassOf mat:SealingSheetVapourBarrierFoils ;
+rdfs:label "Waterproofing Membranes"@en .
+
+mat:VapourBarriersAndBrakes rdf:type owl:Class ;
+rdfs:subClassOf mat:SealingSheetVapourBarrierFoils ;
+rdfs:label "Vapour Barriers And Brakes"@en .
+
+mat:FilmProtectionMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:SealingSheetVapourBarrierFoils ;
+rdfs:label "Film Protection Materials"@en .
+
+
+mat:ExternalPlaster rdf:type owl:Class ;
+rdfs:subClassOf mat:MasonryAndPlasterMortar ;
+rdfs:label "External Plaster"@en .
+
+mat:AdhesiveBridgesAndPreSpray rdf:type owl:Class ;
+rdfs:subClassOf mat:MasonryAndPlasterMortar ;
+rdfs:label "Adhesive Bridges And Pre Spray"@en .
+
+mat:InteriorPlaster rdf:type owl:Class ;
+rdfs:subClassOf mat:MasonryAndPlasterMortar ;
+rdfs:label "Interior Plaster"@en .
+
+mat:Mortar rdf:type owl:Class ;
+rdfs:subClassOf mat:MasonryAndPlasterMortar ;
+rdfs:label "Mortar"@en .
+
+mat:PlasterBase rdf:type owl:Class ;
+rdfs:subClassOf mat:MasonryAndPlasterMortar ;
+rdfs:label "Plaster Base"@en .
+
+
+
+mat:ConcreteMasonry rdf:type owl:Class ;
+rdfs:subClassOf mat:Masonry ;
+rdfs:label "Concrete Masonry"@en .
+
+mat:SandLimeBrickwork rdf:type owl:Class ;
+rdfs:subClassOf mat:Masonry ;
+rdfs:label "Sand Lime Brickwork"@en .
+
+mat:MudBrickMasonryUnfired rdf:type owl:Class ;
+rdfs:subClassOf mat:Masonry ;
+rdfs:label "Mud Brick Masonry Unfired"@en .
+
+mat:NaturalStoneMasonry rdf:type owl:Class ;
+rdfs:subClassOf mat:Masonry ;
+rdfs:label "Natural Stone Masonry"@en .
+
+mat:AeratedConcreteMasonry rdf:type owl:Class ;
+rdfs:subClassOf mat:Masonry ;
+rdfs:label "Aerated Concrete Masonry"@en .
+
+mat:BrickMasonry rdf:type owl:Class ;
+rdfs:subClassOf mat:Masonry ;
+rdfs:label "Brick Masonry"@en .
+
+
+mat:ConcretesWithPumiceAggregate rdf:type owl:Class ;
+rdfs:subClassOf mat:InSituConcretes ;
+rdfs:label "Concretes With Pumice Aggregate"@en .
+
+mat:ConcretesWithExpandedShaleAggregate rdf:type owl:Class ;
+rdfs:subClassOf mat:InSituConcretes ;
+rdfs:label "Concretes With Expanded Shale Aggregate"@en .
+
+mat:ConcretesWithEPSAggregate rdf:type owl:Class ;
+rdfs:subClassOf mat:InSituConcretes ;
+rdfs:label "Concretes With EPS Aggregate"@en .
+
+mat:ConcretesWithSlagPumiceAggregate rdf:type owl:Class ;
+rdfs:subClassOf mat:InSituConcretes ;
+rdfs:label "Concretes With Slag Pumice Aggregate"@en .
+
+mat:ConcretesWithSulphateSlagCement rdf:type owl:Class ;
+rdfs:subClassOf mat:InSituConcretes ;
+rdfs:label "Concretes With Sulphate Slag Cement"@en .
+
+mat:ConcretesWithExpandedClayOrBrickChippingsAggregate rdf:type owl:Class ;
+rdfs:subClassOf mat:InSituConcretes ;
+rdfs:label "Concretes With Expanded Clay Or Brick Chippings Aggregate"@en .
+
+mat:ConcretesInWUQuality rdf:type owl:Class ;
+rdfs:subClassOf mat:InSituConcretes ;
+rdfs:label "Concretes In WU Quality"@en .
+
+mat:NormalConcretes rdf:type owl:Class ;
+rdfs:subClassOf mat:InSituConcretes ;
+rdfs:label "Normal Concretes"@en .
+
+mat:ReinforcedConcreteNormalConcreteWithReinforcement rdf:type owl:Class ;
+rdfs:subClassOf mat:InSituConcretes ;
+rdfs:label "Reinforced Concrete Normal Concrete With Reinforcement"@en .
+
+
+
+mat:ChipboardConcreteWallElements rdf:type owl:Class ;
+rdfs:subClassOf mat:WallElements ;
+rdfs:label "Chipboard Concrete Wall Elements"@en .
+
+mat:WallElementsMadeOfCellularConcrete rdf:type owl:Class ;
+rdfs:subClassOf mat:WallElements ;
+rdfs:label "Wall Elements Made Of Cellular Concrete"@en .
+
+mat:WallElementsMadeOfLightweightConcrete rdf:type owl:Class ;
+rdfs:subClassOf mat:WallElements ;
+rdfs:label "Wall Elements Made Of Lightweight Concrete"@en .
+
+
+
+mat:ElectricalInstallation rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingServices ;
+rdfs:label "Electrical Installation"@en .
+
+mat:HeatingSystems rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingServices ;
+rdfs:label "Heating Systems"@en .
+
+mat:VentillationSystem rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingServices ;
+rdfs:label "Ventillation System"@en .
+
+mat:PhotovoltaicSystem rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingServices ;
+rdfs:label "Photovoltaic System"@en .
+
+mat:SanitaryIntallation rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingServices ;
+rdfs:label "Sanitary Intallation"@en .
+
+mat:SolarSystem rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingServices ;
+rdfs:label "Solar System"@en .
+
+mat:HotWaterTank rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingServices ;
+rdfs:label "Hot Water Tank"@en .
+
+mat:PipeMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingServices ;
+rdfs:label "Pipe Materials"@en .
+
+
+
+
+mat:BuildingOperation rdf:type owl:Class ;
+rdfs:subClassOf mat:Processes ;
+rdfs:label "Building Operation"@en .
+
+mat:MeansOfTransport rdf:type owl:Class ;
+rdfs:subClassOf mat:Processes ;
+rdfs:label "Means Of Transport"@en .
+
+mat:MachiningProcesses rdf:type owl:Class ;
+rdfs:subClassOf mat:Processes ;
+rdfs:label "Machining Processes"@en .
+
+mat:Disposal rdf:type owl:Class ;
+rdfs:subClassOf mat:Processes ;
+rdfs:label "Disposal"@en .
+
+
+
+
+mat:WindowTotal rdf:type owl:Class ;
+rdfs:subClassOf mat:WindowsAndComponents ;
+rdfs:label "Window Total"@en .
+
+mat:WindowFrames rdf:type owl:Class ;
+rdfs:subClassOf mat:WindowsAndComponents ;
+rdfs:label "Window Frames"@en .
+
+mat:Glazings rdf:type owl:Class ;
+rdfs:subClassOf mat:WindowsAndComponents ;
+rdfs:label "Glazings"@en .
+
+mat:LinearThermalBridgeCoefficientPSIValue rdf:type owl:Class ;
+rdfs:subClassOf mat:WindowsAndComponents ;
+rdfs:label "Linear Thermal Bridge Coefficient PSI Value"@en .
+
+
+
+mat:HeatFlowHorizontal rdf:type owl:Class ;
+rdfs:subClassOf mat:Air ;
+rdfs:label "Heat Flow Horizontal"@en .
+
+mat:HeatFlowUpwards rdf:type owl:Class ;
+rdfs:subClassOf mat:Air ;
+rdfs:label "Heat Flow Upwards"@en .
+
+mat:HeatFlowDownwards rdf:type owl:Class ;
+rdfs:subClassOf mat:Air ;
+rdfs:label "Heat Flow Downwards"@en .
+
+
+
+
+mat:CottonInsulationMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Cotton Insulation Materials"@en .
+
+mat:FlaxInsulatingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Flax Insulating Materials"@en .
+
+mat:GrassFibreInsulationBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Grass Fibre Insulation Boards"@en .
+
+mat:HempInsulatingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Hemp Insulating Materials"@en .
+
+mat:WoodFibreInsulatingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Wood Fibre Insulating Materials"@en .
+
+mat:WoodShavingLooseSawdust rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Wood Shaving Loose Sawdust"@en .
+
+mat:CoconutFibreInsulatingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Coconut Fibre Insulating Materials"@en .
+
+mat:CorkInsulatingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Coconut Fibre Insulating Materials"@en .
+
+mat:SheepsWoolInsulationMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Sheeps Wool Insulation Materials"@en .
+
+mat:ReedInsulationBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Reed Insulation Boards"@en .
+
+mat:ReedInsulationMaterialsLoose rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Reed Insulation Materials Loose"@en .
+
+mat:StrawInsulationMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Straw Insulation Materials"@en .
+
+mat:CelluloseFibreInsulatingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:InsulatingMaterialsFromRenewableRawMaterials ;
+rdfs:label "Cellulose Fibre Insulating Materials"@en .
+
+
+
+
+mat:CalciumSilicateInsulationBoard rdf:type owl:Class ;
+rdfs:subClassOf mat:MineralInsulationMaterials ;
+rdfs:label "Calcium Silicate Insulation Board"@en .
+
+mat:GlassWoolInsulatingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:MineralInsulationMaterials ;
+rdfs:label "Glass Wool Insulating Materials"@en .
+
+mat:WoodChipInsulationBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:MineralInsulationMaterials ;
+rdfs:label "Wood Chip Insulation Boards"@en .
+
+
+mat:WoodWoolInsulationBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:MineralInsulationMaterials ;
+rdfs:label "Wood Wool Insulation Boards"@en .
+
+mat:WoodWoolMultiLayerInsulationBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:MineralInsulationMaterials ;
+rdfs:label "Wood Wool MultiLayer Insulation Boards"@en .
+
+mat:MineralFoamInsulationBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:MineralInsulationMaterials ;
+rdfs:label "Mineral Foam Insulation Boards"@en .
+
+mat:PerliteInsulationBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:MineralInsulationMaterials ;
+rdfs:label "Perlite Insulation Boards"@en .
+
+mat:FoamGlassInsulationBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:MineralInsulationMaterials ;
+rdfs:label "Foam Glass Insulation Boards"@en .
+
+mat:RockWoolInsulation rdf:type owl:Class ;
+rdfs:subClassOf mat:MineralInsulationMaterials ;
+rdfs:label "Rock Wool Insulation"@en .
+
+mat:VacuumInsulationPanels rdf:type owl:Class ;
+rdfs:subClassOf mat:MineralInsulationMaterials ;
+rdfs:label "Vacuum Insulation Panels"@en .
+
+
+
+mat:EPSInsulation rdf:type owl:Class ;
+rdfs:subClassOf mat:SyntheticInsulatingMaterials ;
+rdfs:label "EPS Insulation"@en .
+
+mat:PhenolicResinFoamBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:SyntheticInsulatingMaterials ;
+rdfs:label "Phenolic Resin Foam Boards"@en .
+
+mat:PolyesterFibreInsulatingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:SyntheticInsulatingMaterials ;
+rdfs:label "Polyester Fibre Insulating Materials"@en .
+
+mat:PolyethyleneInsulatingMaterials rdf:type owl:Class ;
+rdfs:subClassOf mat:SyntheticInsulatingMaterials ;
+rdfs:label "Polyethylene Insulating Materials"@en .
+
+mat:PolyisocyanurateAndPolyurethaneInsulatingBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:SyntheticInsulatingMaterials ;
+rdfs:label "Polyisocyanurate And Polyurethane Insulating Boards"@en .
+
+mat:XPSInsulationBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:SyntheticInsulatingMaterials ;
+rdfs:label "XPS Insulation Boards"@en .
+
+mat:CementBoundEPSBoards rdf:type owl:Class ;
+rdfs:subClassOf mat:SyntheticInsulatingMaterials ;
+rdfs:label "Cement Bound EPS Boards"@en .
+
+
+
+mat:FillingBricks rdf:type owl:Class ;
+rdfs:subClassOf mat:BrickMasonry ;
+rdfs:label "Filling Bricks"@en .
+
+mat:HighPerforatedBrickMasonry rdf:type owl:Class ;
+rdfs:subClassOf mat:BrickMasonry ;
+rdfs:label "High Perforated Brick Masonry"@en .
+
+mat:SlottedBrickMasonry rdf:type owl:Class ;
+rdfs:subClassOf mat:BrickMasonry ;
+rdfs:label "Slotted Brick Masonry"@en .
+
+
+
+mat:ElectricalCables rdf:type owl:Class ;
+rdfs:subClassOf mat:ElectricalInstallation ;
+rdfs:label "Electrical Cables"@en .
+
+
+
+mat:BiomassBoiler rdf:type owl:Class ;
+rdfs:subClassOf mat:HeatingSystems ;
+rdfs:label "Biomass Boiler"@en .
+
+mat:FossilHeatingBoilers rdf:type owl:Class ;
+rdfs:subClassOf mat:HeatingSystems ;
+rdfs:label "Fossil Heating Boilers"@en .
+
+mat:RadiatorsHeaters rdf:type owl:Class ;
+rdfs:subClassOf mat:HeatingSystems ;
+rdfs:label "Radiators Heaters"@en .
+
+mat:HeatingPipe rdf:type owl:Class ;
+rdfs:subClassOf mat:HeatingSystems ;
+rdfs:label "Heating Pipe"@en .
+
+mat:HeatPumps rdf:type owl:Class ;
+rdfs:subClassOf mat:HeatingSystems ;
+rdfs:label "Heat Pumps"@en .
+
+
+
+
+mat:VentilationUnits rdf:type owl:Class ;
+rdfs:subClassOf mat:VentillationSystem ;
+rdfs:label "Ventilation Units"@en .
+
+mat:VentilationPipes rdf:type owl:Class ;
+rdfs:subClassOf mat:VentillationSystem ;
+rdfs:label "Ventilation Pipes"@en .
+
+mat:Accesories rdf:type owl:Class ;
+rdfs:subClassOf mat:VentillationSystem ;
+rdfs:label "Accesories"@en .
+
+
+
+
+mat:SanitaryFacilities rdf:type owl:Class ;
+rdfs:subClassOf mat:SanitaryIntallation ;
+rdfs:label "Sanitary Facilities"@en .
+
+mat:WaterPipes rdf:type owl:Class ;
+rdfs:subClassOf mat:SanitaryIntallation ;
+rdfs:label "Water Pipes"@en .
+
+
+
+mat:IBOCharecterizationFactors rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingOperation ;
+rdfs:label "IBO Charecterization Factors"@en .
+
+mat:OIBCharecterizationFactors rdf:type owl:Class ;
+rdfs:subClassOf mat:BuildingOperation ;
+rdfs:label "OIB Charecterization Factors"@en .
