@@ -102,6 +102,18 @@ mat:hasMaterialProfileSet rdf:type owl:ObjectProperty ;
                           rdfs:label "has material profile set"@en .
 
 
+###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement
+mat:hasMeasurement rdf:type owl:ObjectProperty ;
+                   rdfs:comment "A relationship between a feature of interest and a measurement about it."@en ;
+                   rdfs:label "has measurement"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty
+mat:hasProperty rdf:type owl:ObjectProperty ;
+                rdfs:comment "A relationship between a feature of interest and a property of that feature."@en ;
+                rdfs:label "has property"@en .
+
+
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#hasPropertySet
 mat:hasPropertySet rdf:type owl:ObjectProperty ;
                    rdfs:comment "Relationship to connect a material or building element to an specific set of properties."@en ;
@@ -118,18 +130,6 @@ mat:isPropertyFromDatabase rdf:type owl:ObjectProperty ;
 mat:isPropertyValueFromDatabase rdf:type owl:ObjectProperty ;
                                 rdfs:comment "A relationship identifying in which database the property value is defined."@en ;
                                 rdfs:label "is property value from database"@en .
-
-
-###  https://saref.etsi.org/core/hasMeasurement
-saref:hasMeasurement rdf:type owl:ObjectProperty ;
-                     rdfs:comment "A relationship between a feature of interest and a measurement about it."@en ;
-                     rdfs:label "has measurement"@en .
-
-
-###  https://saref.etsi.org/core/hasProperty
-saref:hasProperty rdf:type owl:ObjectProperty ;
-                  rdfs:comment "A relationship between a feature of interest and a property of that feature."@en ;
-                  rdfs:label "has property"@en .
 
 
 ###  https://saref.etsi.org/core/isMeasuredIn
@@ -177,6 +177,10 @@ building:Element rdf:type owl:Class ;
                                    owl:allValuesFrom mat:Material
                                  ] ,
                                  [ rdf:type owl:Restriction ;
+                                   owl:onProperty mat:hasMaterialConstituentSet ;
+                                   owl:allValuesFrom mat:MaterialConstituentSet
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
                                    owl:onProperty mat:hasMaterialLayerSet ;
                                    owl:allValuesFrom mat:MaterialLayerSet
                                  ] ,
@@ -187,10 +191,6 @@ building:Element rdf:type owl:Class ;
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty mat:hasPropertySet ;
                                    owl:allValuesFrom mat:PropertySet
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty saref:hasMeasurement ;
-                                   owl:allValuesFrom saref:Measurement
                                  ] ;
                  rdfs:comment "An element is a generalization of all components that make up an AEC product."@en ;
                  rdfs:label "Element"@en ;
@@ -636,14 +636,6 @@ mat:Material rdf:type owl:Class ;
                                owl:allValuesFrom mat:PropertySet
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty saref:hasMeasurement ;
-                               owl:allValuesFrom saref:Measurement
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty saref:hasProperty ;
-                               owl:allValuesFrom saref:Property
-                             ] ,
-                             [ rdf:type owl:Restriction ;
                                owl:onProperty mat:identifierInDatabase ;
                                owl:allValuesFrom xsd:string
                              ] ;
@@ -883,6 +875,14 @@ mat:Processes rdf:type owl:Class ;
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet
 mat:PropertySet rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty mat:hasMeasurement ;
+                                  owl:allValuesFrom saref:Measurement
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty mat:hasProperty ;
+                                  owl:allValuesFrom saref:Property
+                                ] ;
                 rdfs:comment "N-ary class to unite specific properties related to building elements or materials."@en ;
                 rdfs:label "Property set"@en .
 

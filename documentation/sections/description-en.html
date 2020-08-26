@@ -12,8 +12,10 @@
 </p>
 
 <p>The materials have properties and measurements related to them. For this purpose we reutilize the artifacts provided by the SAREF ontology. 
-    As we can see on Figure 1, a <code>building:Element</code> and <code>mat:Material</code> are related to the concepts <code>mat:PropertySet</code> and <code>saref:Measurement</code>, by 
-    means of the relations <code>mat:hasPropertySet</code> and <code>saref:hasMeasurement</code>.
+    As we can see on Figure 1, <code>building:Element</code> and <code>mat:Material</code> are related to the concept <code>mat:PropertySet</code>, which group together
+    several related properties. The <code>mat:PropertySet</code> is connected to several properties and their specific measurements by means of the relations 
+    <code>mat:hasProperty</code>, and <code>mat:hasMeasurement</code> respectively. We avoid reusing the same relationships from the SAREF ontology because they have as domain the class
+    <code>saref:FeatureOfInterest</code>, making <code>mat:PropertySet</code> a subclass of this concept, which is not semantically correct for our case.
 </p>
 
 <p>In order to provide provenance information regarding where the material property definitions, and the specific values come from, we added
