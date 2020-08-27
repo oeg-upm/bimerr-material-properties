@@ -258,6 +258,16 @@
     
 
 
+    <!-- http://bimerr.iot.linkeddata.es/def/material-properties#ifcIdentifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#ifcIdentifier">
+        <rdfs:comment xml:lang="en">Ifc identifier of the element in an IFC file.</rdfs:comment>
+        <rdfs:label xml:lang="en">ifc identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
 
@@ -1457,6 +1467,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty"/>
                 <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#ifcIdentifier"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">N-ary class to unite specific properties related to building elements or materials.</rdfs:comment>

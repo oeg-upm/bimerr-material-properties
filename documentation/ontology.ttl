@@ -147,6 +147,12 @@
                       rdfs:label "identifier in database"@en .
 
 
+###  http://bimerr.iot.linkeddata.es/def/material-properties#ifcIdentifier
+:ifcIdentifier rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Ifc identifier of the element in an IFC file."@en ;
+               rdfs:label "ifc identifier"@en .
+
+
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 <http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:DatatypeProperty ;
                                                 rdfs:comment "relationship between a concept and its preferred label"@en ;
@@ -875,6 +881,10 @@
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasProperty ;
                                owl:allValuesFrom <https://saref.etsi.org/core/Property>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :ifcIdentifier ;
+                               owl:allValuesFrom xsd:string
                              ] ;
              rdfs:comment "N-ary class to unite specific properties related to building elements or materials."@en ;
              rdfs:label "Property set"@en .
