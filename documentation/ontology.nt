@@ -82,11 +82,6 @@
 <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialProfileSet> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between an element and its construction based in material profiles."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialProfileSet> <http://www.w3.org/2000/01/rdf-schema#label> "has material profile set"@en .
 # 
-# http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement
-<http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a feature of interest and a measurement about it."@en .
-<http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "has measurement"@en .
-# 
 # http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty
 <http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a feature of interest and a property of that feature."@en .
@@ -112,6 +107,11 @@
 <https://saref.etsi.org/core/isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the unit of measure used for a certain entity."@en .
 <https://saref.etsi.org/core/isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "is measured in"@en .
 # 
+# https://saref.etsi.org/core/relatesToMeasurement
+<https://saref.etsi.org/core/relatesToMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core/relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a property and the measurements it relates to."@en .
+<https://saref.etsi.org/core/relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "relates to measurement"@en .
+# 
 # https://saref.etsi.org/core/relatesToProperty
 <https://saref.etsi.org/core/relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core/relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a measurement and the property it relates to."@en .
@@ -126,6 +126,11 @@
 # #################################################################
 # 
 # 
+# http://bimerr.iot.linkeddata.es/def/material-properties#description
+<http://bimerr.iot.linkeddata.es/def/material-properties#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#description> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the entity."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+# 
 # http://bimerr.iot.linkeddata.es/def/material-properties#identifierInDatabase
 <http://bimerr.iot.linkeddata.es/def/material-properties#identifierInDatabase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#identifierInDatabase> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship to indicate the identifier used in the source database"@en .
@@ -136,10 +141,10 @@
 <http://bimerr.iot.linkeddata.es/def/material-properties#ifcIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Ifc identifier of the element in an IFC file."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#ifcIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "ifc identifier"@en .
 # 
-# http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "relationship between a concept and its preferred label"@en .
-<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#label> "pref label"@en .
+# http://bimerr.iot.linkeddata.es/def/material-properties#name
+<http://bimerr.iot.linkeddata.es/def/material-properties#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the entity."@en .
+<http://bimerr.iot.linkeddata.es/def/material-properties#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
 # 
 # https://saref.etsi.org/core/hasValue
 <https://saref.etsi.org/core/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -549,29 +554,54 @@ _:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddat
 _:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#identifierInDatabase> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#description> .
 _:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#name> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#identifierInDatabase> .
+_:genid9 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/2000/01/rdf-schema#comment> "A homogeneous or inhomogeneous substance that can be used to form elements (physical products or their components). (Definition taken from IFC)"@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#Material> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterial" .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial> .
-_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#description> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#name> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent> <http://www.w3.org/2000/01/rdf-schema#comment> "A single and identifiable part of an element which is constructed of a number of part (one or more) each having an individual material."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent> <http://www.w3.org/2000/01/rdf-schema#label> "Material constituent"@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialConstituent"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialConstituent> .
-_:genid9 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialConstituent> .
+_:genid13 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#description> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#name> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of individual material constituents, each assigning a material to a part of an element."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet> <http://www.w3.org/2000/01/rdf-schema#label> "Material constituent set"@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialConstituentSet"@en .
@@ -583,21 +613,37 @@ _:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.e
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial> .
-_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#description> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#name> .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> <http://www.w3.org/2000/01/rdf-schema#comment> "A single and identifiable part of an element which is constructed of a number of layers (one or more)."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> <http://www.w3.org/2000/01/rdf-schema#label> "Material layer"@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialLayer"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialLayer> .
-_:genid11 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid11 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialLayer> .
+_:genid19 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#description> .
+_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#name> .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A designation by which materials of an element constructed of a number of material layers is known and through which the relative positioning of individual layers can be expressed."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/2000/01/rdf-schema#label> "Material layer set"@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialLayerSet"@en .
@@ -605,30 +651,68 @@ _:genid11 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.
 # http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Measurement> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyValueFromDatabase> .
-_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyValueFromDatabase> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/UnitOfMeasure> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToProperty> .
+_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onClass> <https://saref.etsi.org/core/UnitOfMeasure> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToProperty> .
+_:genid26 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasValue> .
+_:genid27 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Measurements related to materials."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Material measurement"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial> .
-_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial> .
+_:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#Material> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#description> .
+_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#name> .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "A single and identifiable cross section of an element which is constructed of a number of profiles (one or more)."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Material profile"@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialProfile"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialProfile> .
-_:genid14 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialProfile> .
+_:genid31 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#description> .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#name> .
+_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A designation by which individual material(s) of a prismatic element (for example, beam or column) constructed of a single or multiple material profiles is known."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet> <http://www.w3.org/2000/01/rdf-schema#label> "Material profile set"@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialProfileSet"@en .
@@ -636,10 +720,14 @@ _:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.
 # http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyFromDatabase> .
-_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyFromDatabase> .
+_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToMeasurement> .
+_:genid35 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Properties of materials."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Material property"@en .
 # 
@@ -755,18 +843,22 @@ _:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://bimerr.iot.linke
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet
 <http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement> .
-_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Measurement> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty> .
-_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Property> .
-<http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#ifcIdentifier> .
-_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty> .
+_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Property> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#description> .
+_:genid37 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#ifcIdentifier> .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/material-properties#name> .
+_:genid39 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet> <http://www.w3.org/2000/01/rdf-schema#comment> "N-ary class to unite specific properties related to building elements or materials."@en .
 <http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet> <http://www.w3.org/2000/01/rdf-schema#label> "Property set"@en .
 # 
@@ -1007,23 +1099,6 @@ _:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 # 
 # https://saref.etsi.org/core/Measurement
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
-_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/UnitOfMeasure> .
-<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToProperty> .
-_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Property> .
-<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
-_:genid21 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid21 <http://www.w3.org/2002/07/owl#onClass> <https://saref.etsi.org/core/UnitOfMeasure> .
-<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasValue> .
-_:genid22 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement. (Definition taken from SAREF)"@en .
 <https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement"@en .
 # 

@@ -95,12 +95,6 @@
                        rdfs:label "has material profile set"@en .
 
 
-###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement
-:hasMeasurement rdf:type owl:ObjectProperty ;
-                rdfs:comment "A relationship between a feature of interest and a measurement about it."@en ;
-                rdfs:label "has measurement"@en .
-
-
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty
 :hasProperty rdf:type owl:ObjectProperty ;
              rdfs:comment "A relationship between a feature of interest and a property of that feature."@en ;
@@ -131,6 +125,12 @@
                                            rdfs:label "is measured in"@en .
 
 
+###  https://saref.etsi.org/core/relatesToMeasurement
+<https://saref.etsi.org/core/relatesToMeasurement> rdf:type owl:ObjectProperty ;
+                                                   rdfs:comment "A relationship between a property and the measurements it relates to."@en ;
+                                                   rdfs:label "relates to measurement"@en .
+
+
 ###  https://saref.etsi.org/core/relatesToProperty
 <https://saref.etsi.org/core/relatesToProperty> rdf:type owl:ObjectProperty ;
                                                 rdfs:comment "A relationship between a measurement and the property it relates to."@en ;
@@ -140,6 +140,12 @@
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:comment "A description of the entity."@en ;
+             rdfs:label "description"@en .
+
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#identifierInDatabase
 :identifierInDatabase rdf:type owl:DatatypeProperty ;
@@ -153,10 +159,10 @@
                rdfs:label "ifc identifier"@en .
 
 
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:DatatypeProperty ;
-                                                rdfs:comment "relationship between a concept and its preferred label"@en ;
-                                                rdfs:label "pref label"@en .
+###  http://bimerr.iot.linkeddata.es/def/material-properties#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:comment "Name of the entity."@en ;
+      rdfs:label "name"@en .
 
 
 ###  https://saref.etsi.org/core/hasValue
@@ -635,8 +641,17 @@
                             owl:allValuesFrom :PropertySet
                           ] ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :identifierInDatabase ;
+                            owl:onProperty :description ;
                             owl:allValuesFrom xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :name ;
+                            owl:allValuesFrom xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :identifierInDatabase ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
                           ] ;
           rdfs:comment "A homogeneous or inhomogeneous substance that can be used to form elements (physical products or their components). (Definition taken from IFC)"@en ;
           rdfs:label "Material"@en ;
@@ -648,6 +663,14 @@
                      rdfs:subClassOf [ rdf:type owl:Restriction ;
                                        owl:onProperty :hasMaterial ;
                                        owl:allValuesFrom :Material
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :description ;
+                                       owl:allValuesFrom xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :name ;
+                                       owl:allValuesFrom xsd:string
                                      ] ;
                      rdfs:comment "A single and identifiable part of an element which is constructed of a number of part (one or more) each having an individual material."@en ;
                      rdfs:label "Material constituent"@en ;
@@ -660,6 +683,14 @@
                                           owl:onProperty :hasMaterialConstituent ;
                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                           owl:onClass :MaterialConstituent
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :description ;
+                                          owl:allValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :name ;
+                                          owl:allValuesFrom xsd:string
                                         ] ;
                         rdfs:comment "A collection of individual material constituents, each assigning a material to a part of an element."@en ;
                         rdfs:label "Material constituent set"@en ;
@@ -677,6 +708,14 @@
                rdfs:subClassOf [ rdf:type owl:Restriction ;
                                  owl:onProperty :hasMaterial ;
                                  owl:allValuesFrom :Material
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :description ;
+                                 owl:allValuesFrom xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :name ;
+                                 owl:allValuesFrom xsd:string
                                ] ;
                rdfs:comment "A single and identifiable part of an element which is constructed of a number of layers (one or more)."@en ;
                rdfs:label "Material layer"@en ;
@@ -689,6 +728,14 @@
                                     owl:onProperty :hasMaterialLayer ;
                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                     owl:onClass :MaterialLayer
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :description ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :name ;
+                                    owl:allValuesFrom xsd:string
                                   ] ;
                   rdfs:comment "A designation by which materials of an element constructed of a number of material layers is known and through which the relative positioning of individual layers can be expressed."@en ;
                   rdfs:label "Material layer set"@en ;
@@ -701,6 +748,28 @@
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty :isPropertyValueFromDatabase ;
                                        owl:allValuesFrom :MaterialDatabase
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://saref.etsi.org/core/isMeasuredIn> ;
+                                       owl:allValuesFrom <https://saref.etsi.org/core/UnitOfMeasure>
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://saref.etsi.org/core/relatesToProperty> ;
+                                       owl:allValuesFrom :MaterialProperty
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://saref.etsi.org/core/isMeasuredIn> ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass <https://saref.etsi.org/core/UnitOfMeasure>
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://saref.etsi.org/core/relatesToProperty> ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :MaterialProperty
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <https://saref.etsi.org/core/hasValue> ;
+                                       owl:cardinality "1"^^xsd:nonNegativeInteger
                                      ] ;
                      rdfs:comment "Measurements related to materials."@en ;
                      rdfs:label "Material measurement"@en .
@@ -711,6 +780,14 @@
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                    owl:onProperty :hasMaterial ;
                                    owl:allValuesFrom :Material
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :description ;
+                                   owl:allValuesFrom xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :name ;
+                                   owl:allValuesFrom xsd:string
                                  ] ;
                  rdfs:comment "A single and identifiable cross section of an element which is constructed of a number of profiles (one or more)."@en ;
                  rdfs:label "Material profile"@en ;
@@ -723,6 +800,14 @@
                                       owl:onProperty :hasMaterialProfile ;
                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                       owl:onClass :MaterialProfile
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :description ;
+                                      owl:allValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :name ;
+                                      owl:allValuesFrom xsd:string
                                     ] ;
                     rdfs:comment "A designation by which individual material(s) of a prismatic element (for example, beam or column) constructed of a single or multiple material profiles is known."@en ;
                     rdfs:label "Material profile set"@en ;
@@ -735,6 +820,10 @@
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty :isPropertyFromDatabase ;
                                     owl:allValuesFrom :MaterialDatabase
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <https://saref.etsi.org/core/relatesToMeasurement> ;
+                                    owl:allValuesFrom :MaterialMeasurement
                                   ] ;
                   rdfs:comment "Properties of materials."@en ;
                   rdfs:label "Material property"@en .
@@ -875,15 +964,19 @@
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#PropertySet
 :PropertySet rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasMeasurement ;
-                               owl:allValuesFrom <https://saref.etsi.org/core/Measurement>
-                             ] ,
-                             [ rdf:type owl:Restriction ;
                                owl:onProperty :hasProperty ;
                                owl:allValuesFrom <https://saref.etsi.org/core/Property>
                              ] ,
                              [ rdf:type owl:Restriction ;
+                               owl:onProperty :description ;
+                               owl:allValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
                                owl:onProperty :ifcIdentifier ;
+                               owl:allValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :name ;
                                owl:allValuesFrom xsd:string
                              ] ;
              rdfs:comment "N-ary class to unite specific properties related to building elements or materials."@en ;
@@ -1174,23 +1267,6 @@
 
 ###  https://saref.etsi.org/core/Measurement
 <https://saref.etsi.org/core/Measurement> rdf:type owl:Class ;
-                                          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <https://saref.etsi.org/core/isMeasuredIn> ;
-                                                            owl:allValuesFrom <https://saref.etsi.org/core/UnitOfMeasure>
-                                                          ] ,
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <https://saref.etsi.org/core/relatesToProperty> ;
-                                                            owl:allValuesFrom <https://saref.etsi.org/core/Property>
-                                                          ] ,
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <https://saref.etsi.org/core/isMeasuredIn> ;
-                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                            owl:onClass <https://saref.etsi.org/core/UnitOfMeasure>
-                                                          ] ,
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <https://saref.etsi.org/core/hasValue> ;
-                                                            owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                          ] ;
                                           rdfs:comment "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement. (Definition taken from SAREF)"@en ;
                                           rdfs:label "Measurement"@en .
 

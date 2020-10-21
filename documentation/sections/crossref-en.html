@@ -2221,8 +2221,6 @@ This section provides details for each class and property defined by Material pr
          <span class="markdown">Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement. (Definition taken from SAREF)</span>
       </div>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#MaterialMeasurement"
@@ -3528,10 +3526,6 @@ This section provides details for each class and property defined by Material pr
             title="http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialProfileSet">has material profile set</a>
       </li>
       <li>
-         <a href="#hasMeasurement"
-            title="http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement">has measurement</a>
-      </li>
-      <li>
          <a href="#hasProperty"
             title="http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty">has property</a>
       </li>
@@ -3549,6 +3543,9 @@ This section provides details for each class and property defined by Material pr
       <li>
          <a href="#isPropertyValueFromDatabase"
             title="http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyValueFromDatabase">is property value from database</a>
+      </li>
+      <li>
+         <a href="#https://saref.etsi.org/core/relatesToMeasurement" title="https://saref.etsi.org/core/relatesToMeasurement">relates to measurement</a>
       </li>
       <li>
          <a href="#https://saref.etsi.org/core/relatesToProperty" title="https://saref.etsi.org/core/relatesToProperty">relates to property</a>
@@ -3642,17 +3639,6 @@ This section provides details for each class and property defined by Material pr
          <span class="markdown">Relation between an element and its construction based in material profiles.</span>
       </div>
    </div>
-   <div class="entity" id="hasMeasurement">
-      <h3>has measurement<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement</p>
-      <div class="comment">
-         <span class="markdown">A relationship between a feature of interest and a measurement about it.</span>
-      </div>
-   </div>
    <div class="entity" id="hasProperty">
       <h3>has property<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3708,6 +3694,17 @@ This section provides details for each class and property defined by Material pr
          <span class="markdown">A relationship identifying in which database the property value is defined.</span>
       </div>
    </div>
+   <div class="entity" id="https://saref.etsi.org/core/relatesToMeasurement">
+      <h3>relates to measurement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://saref.etsi.org/core/relatesToMeasurement</p>
+      <div class="comment">
+         <span class="markdown">A relationship between a property and the measurements it relates to.</span>
+      </div>
+   </div>
    <div class="entity" id="https://saref.etsi.org/core/relatesToProperty">
       <h3>relates to property<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3723,6 +3720,10 @@ This section provides details for each class and property defined by Material pr
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#description"
+            title="http://bimerr.iot.linkeddata.es/def/material-properties#description">description</a>
+      </li>
+      <li>
          <a href="#https://saref.etsi.org/core/hasValue" title="https://saref.etsi.org/core/hasValue">has value</a>
       </li>
       <li>
@@ -3734,9 +3735,21 @@ This section provides details for each class and property defined by Material pr
             title="http://bimerr.iot.linkeddata.es/def/material-properties#ifcIdentifier">ifc identifier</a>
       </li>
       <li>
-         <a href="#http://www.w3.org/2004/02/skos/core#prefLabel" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref label</a>
+         <a href="#name"
+            title="http://bimerr.iot.linkeddata.es/def/material-properties#name">name</a>
       </li>
    </ul>
+   <div class="entity" id="description">
+      <h3>description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/material-properties#description</p>
+      <div class="comment">
+         <span class="markdown">A description of the entity.</span>
+      </div>
+   </div>
    <div class="entity" id="https://saref.etsi.org/core/hasValue">
       <h3>has value<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -3770,15 +3783,15 @@ This section provides details for each class and property defined by Material pr
          <span class="markdown">Ifc identifier of the element in an IFC file.</span>
       </div>
    </div>
-   <div class="entity" id="http://www.w3.org/2004/02/skos/core#prefLabel">
-      <h3>pref label<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="name">
+      <h3>name<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#prefLabel</p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/material-properties#name</p>
       <div class="comment">
-         <span class="markdown">relationship between a concept and its preferred label</span>
+         <span class="markdown">Name of the entity.</span>
       </div>
    </div>
 </div><div id="legend">

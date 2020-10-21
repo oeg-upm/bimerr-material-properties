@@ -19,6 +19,82 @@
 }, {
   "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#description"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#name"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialConstituent"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#description"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#name"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#Material"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#description"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#name"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
@@ -28,82 +104,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialLayer"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyValueFromDatabase"
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#Material"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial"
-  } ]
-}, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialProfile"
-  } ]
-}, {
-  "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyFromDatabase"
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://saref.etsi.org/core/Measurement"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement"
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://saref.etsi.org/core/Property"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty"
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#ifcIdentifier"
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/core/isMeasuredIn"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -118,13 +118,49 @@
   "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://saref.etsi.org/core/Property"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#description"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#name"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyValueFromDatabase"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/isMeasuredIn"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://saref.etsi.org/core/relatesToProperty"
   } ]
 }, {
-  "@id" : "_:genid21",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
@@ -137,7 +173,20 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid22",
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/relatesToProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -147,6 +196,24 @@
     "@id" : "https://saref.etsi.org/core/hasValue"
   } ]
 }, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#Material"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#description"
+  } ]
+}, {
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
@@ -154,6 +221,100 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialLayerSet"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#name"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialProfile"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#description"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#name"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#isPropertyFromDatabase"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/relatesToMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#description"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#ifcIdentifier"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#name"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -189,29 +350,29 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#identifierInDatabase"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#description"
   } ]
 }, {
   "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#Material"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#name"
   } ]
 }, {
   "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent"
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialConstituent"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#identifierInDatabase"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/building#Element",
@@ -1002,6 +1163,10 @@
     "@id" : "_:genid6"
   }, {
     "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituent",
@@ -1019,7 +1184,11 @@
     "@value" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialConstituent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid8"
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialConstituentSet",
@@ -1037,7 +1206,11 @@
     "@value" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialConstituentSet"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid9"
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialDatabase",
@@ -1066,7 +1239,11 @@
     "@value" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialLayer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid10"
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayerSet",
@@ -1084,7 +1261,11 @@
     "@value" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialLayerSet"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid11"
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialMeasurement",
@@ -1100,7 +1281,17 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/Measurement"
   }, {
-    "@id" : "_:genid12"
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
+  }, {
+    "@id" : "_:genid26"
+  }, {
+    "@id" : "_:genid27"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfile",
@@ -1118,7 +1309,11 @@
     "@value" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialProfile"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid28"
+  }, {
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProfileSet",
@@ -1136,7 +1331,11 @@
     "@value" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcMaterialProfileSet"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid14"
+    "@id" : "_:genid31"
+  }, {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MaterialProperty",
@@ -1152,7 +1351,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/Property"
   }, {
-    "@id" : "_:genid15"
+    "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#MeansOfTransport",
@@ -1386,11 +1587,13 @@
     "@value" : "Property set"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid16"
+    "@id" : "_:genid36"
   }, {
-    "@id" : "_:genid17"
+    "@id" : "_:genid37"
   }, {
-    "@id" : "_:genid18"
+    "@id" : "_:genid38"
+  }, {
+    "@id" : "_:genid39"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#RadiatorsHeaters",
@@ -1863,6 +2066,17 @@
     "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#SyntheticInsulatingMaterials"
   } ]
 }, {
+  "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A description of the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "description"
+  } ]
+}, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1951,17 +2165,6 @@
     "@value" : "has material profile set"
   } ]
 }, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasMeasurement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A relationship between a feature of interest and a measurement about it."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has measurement"
-  } ]
-}, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#hasProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2028,6 +2231,17 @@
     "@value" : "is property value from database"
   } ]
 }, {
+  "@id" : "http://bimerr.iot.linkeddata.es/def/material-properties#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of the entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -2046,17 +2260,6 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "relationship between a concept and its preferred label"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "pref label"
-  } ]
-}, {
   "@id" : "https://saref.etsi.org/core/Measurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2066,15 +2269,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Measurement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid19"
-  }, {
-    "@id" : "_:genid20"
-  }, {
-    "@id" : "_:genid21"
-  }, {
-    "@id" : "_:genid22"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core/Property",
@@ -2119,6 +2313,17 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is measured in"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a property and the measurements it relates to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "relates to measurement"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core/relatesToProperty",
