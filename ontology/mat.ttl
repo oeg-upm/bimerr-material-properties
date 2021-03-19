@@ -60,12 +60,6 @@ mat:hasMaterial rdf:type owl:ObjectProperty ;
                 rdfs:label "has material"@en .
 
 
-###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialCategory
-mat:hasMaterialCategory rdf:type owl:ObjectProperty ;
-                        rdfs:comment "Relationship to indicate the category of an specific material."@en ;
-                        rdfs:label "has material category"@en .
-
-
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialConstituent
 mat:hasMaterialConstituent rdf:type owl:ObjectProperty ;
                            rdfs:comment "A relation between a constituent set and the specific material constituents."@en ;
@@ -170,6 +164,26 @@ mat:ifcIdentifier rdf:type owl:DatatypeProperty ;
 mat:name rdf:type owl:DatatypeProperty ;
          rdfs:comment "Name of the entity."@en ;
          rdfs:label "name"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#position
+mat:position rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:integer ;
+             rdfs:comment "Position of the layer."@en ;
+             rdfs:label "position"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#thickness
+mat:thickness rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:float ;
+              rdfs:comment "Thickness of the layer."@en ;
+              rdfs:label "thickness"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/material-properties#type
+mat:type rdf:type owl:DatatypeProperty ;
+         rdfs:comment "Type of layer"@en ;
+         rdfs:label "type"@en .
 
 
 ###  https://saref.etsi.org/core/hasValue
@@ -723,6 +737,18 @@ mat:MaterialLayer rdf:type owl:Class ;
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty mat:name ;
                                     owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty mat:position ;
+                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty mat:thickness ;
+                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty mat:type ;
+                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                   ] ;
                   rdfs:comment "A single and identifiable part of an element which is constructed of a number of layers (one or more)."@en ;
                   rdfs:label "Material layer"@en ;

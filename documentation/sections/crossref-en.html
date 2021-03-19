@@ -3498,10 +3498,6 @@ This section provides details for each class and property defined by Material pr
             title="http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial">has material</a>
       </li>
       <li>
-         <a href="#hasMaterialCategory"
-            title="http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialCategory">has material category</a>
-      </li>
-      <li>
          <a href="#hasMaterialConstituent"
             title="http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialConstituent">has material constituent</a>
       </li>
@@ -3560,17 +3556,6 @@ This section provides details for each class and property defined by Material pr
          <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterial</p>
       <div class="comment">
          <span class="markdown">Relation between a construction component (Layer, profile, constituent) and the materials that define them.</span>
-      </div>
-   </div>
-   <div class="entity" id="hasMaterialCategory">
-      <h3>has material category<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/material-properties#hasMaterialCategory</p>
-      <div class="comment">
-         <span class="markdown">Relationship to indicate the category of an specific material.</span>
       </div>
    </div>
    <div class="entity" id="hasMaterialConstituent">
@@ -3738,6 +3723,18 @@ This section provides details for each class and property defined by Material pr
          <a href="#name"
             title="http://bimerr.iot.linkeddata.es/def/material-properties#name">name</a>
       </li>
+      <li>
+         <a href="#position"
+            title="http://bimerr.iot.linkeddata.es/def/material-properties#position">position</a>
+      </li>
+      <li>
+         <a href="#thickness"
+            title="http://bimerr.iot.linkeddata.es/def/material-properties#thickness">thickness</a>
+      </li>
+      <li>
+         <a href="#type"
+            title="http://bimerr.iot.linkeddata.es/def/material-properties#type">type</a>
+      </li>
    </ul>
    <div class="entity" id="description">
       <h3>description<sup class="type-dp" title="data property">dp</sup>
@@ -3792,6 +3789,55 @@ This section provides details for each class and property defined by Material pr
          <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/material-properties#name</p>
       <div class="comment">
          <span class="markdown">Name of the entity.</span>
+      </div>
+   </div>
+   <div class="entity" id="position">
+      <h3>position<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/material-properties#position</p>
+      <div class="comment">
+         <span class="markdown">Position of the layer.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="thickness">
+      <h3>thickness<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/material-properties#thickness</p>
+      <div class="comment">
+         <span class="markdown">Thickness of the layer.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="type">
+      <h3>type<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/material-properties#type</p>
+      <div class="comment">
+         <span class="markdown">Type of layer</span>
       </div>
    </div>
 </div><div id="legend">
