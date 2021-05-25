@@ -433,7 +433,8 @@ mat:PropertySet rdf:type owl:Class ;
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty mat:hasProperty ;
-                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass mat:Property
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty mat:ifcIdentifier ;

@@ -426,7 +426,8 @@
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasProperty ;
-                               owl:minCardinality "1"^^xsd:nonNegativeInteger
+                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Property
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :ifcIdentifier ;
