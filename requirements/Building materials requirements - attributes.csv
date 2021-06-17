@@ -1,0 +1,74 @@
+Concept,Attribute,"Value type expected
+(integer, boolean, float, list of specific values, etc.)",Min Cardinality,Max cardinality,"Unit of measure
+(if applicable)"
+Material (dto),MaterialID,string,1,1,
+,Name,string,1,1,
+,Category,string,1,*,
+,ReferenceSize,int,1,1,
+,UnitOfReference,string,1,1,
+,Lifetime,int,1,1,years
+,Thickness,int,1,1,m
+,SurfaceWeight,float,1,1,kg/m²
+,Yield,float,1,1,m²
+,LengthWeight,float,1,1,kg/m
+,ConversionFactorTo1kg,float,1,1,
+,Module,float,1,1,
+,Conductivity,float,1,1,W/(m*K)
+,Density,float,1,1,kg/m³
+,SpecificHeat,float,1,1,J/(kg*K)
+,LinearThermalBridgeCoefficient,float,0,1,W/(m*K)
+,SurfaceWeight,float,0,1,kg/m²
+,WindowThickness,float,0,1,m
+,WindowFrameHeatTransmissionCoefficient,float,0,1,W/(m²*K)
+,WindowFrameWidth,float,0,1,m
+,WindowFrameRungWidth,float,0,1,m
+,VapourDiffusionResistance,float,0,1,
+,VapourDiffusionResistanceDry,float,0,1,
+,VapourDiffusionResistanceWet,float,0,1,
+,GlassHeatTransmissionCoefficient,float,0,1,W/(m²*K)
+,GlassEnergyTransmissionFactor,float,0,1,%
+,UsedFrom,int,0,1,year
+,UsedTo,int,0,1,year
+,DoorHeatTransmissionCoefficient,float,0,1,W/(m²*K)
+,ThermalAbsorptance,float,1,1,"range: (0, 1)"
+,SolarAbsorptance,float,1,1,"range: (0, 1)"
+,VisibleAbsorptance,float,1,1,"range: (0, 1)"
+,ThermalResistance,float,1,1,(m²*K)/W
+,ODT,"float
+choice",1,1,SpectralAverage; Spectral; SpectralAndAngle; BSDF
+,WGSDSN,float,1,1,
+,STNI,float,1,1,
+,FSSRNI,float,1,1,
+,BSSRNI,float,1,1,
+,VTNI,float,1,1,
+,FSVRNI,float,1,1,
+,BSVRNI,float,1,1,
+,ITNI,float,1,1,
+,FSIHE,float,1,1,
+,BSIHE,float,1,1,
+,Roughness,choice,1,1,very smooth; smooth; medium smooth; medium rough; rough; very rough
+,GWP,float,1,1,kg CO2 eq.
+,ODP,float,1,1,kg CFC-11
+,POCP,float,1,1,kg C2H4
+,AP,float,1,1,kg SO2 eq.
+,EP,float,1,1,kg PO43-
+,ADPE,float,1,1,kg Sb eq.
+,ADPF,float,1,1,MJ
+,PERE,float,1,1,MJ
+,PERM,float,1,1,MJ
+,PERT,float,1,1,MJ
+,PENRE,float,1,1,MJ
+,PENRM,float,1,1,MJ
+,PENRT,float,1,1,MJ
+,SM,float,1,1,kg
+,RSF,float,1,1,MJ
+,NRSF,float,1,1,MJ
+,FW,float,1,1,m³
+,HWD,float,1,1,kg
+,NHWD,float,1,1,kg
+,RWD,float,1,1,kg
+,CRU,float,1,1,kg
+,MFR,float,1,1,kg
+,MER,float,1,1,kg
+,EEE,float,1,1,MJ
+,EET,float,1,1,MJ
